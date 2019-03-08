@@ -1,0 +1,191 @@
+[
+  {
+    "name": "alef",
+    "aka": null,
+    "value": "א",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "bet",
+    "aka": "vet",
+    "value": "ב",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "gimel",
+    "aka": null,
+    "value": "ג",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "dalet",
+    "aka": null,
+    "value": "ד",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "heh",
+    "aka": null,
+    "value": "ה",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "vav",
+    "aka": null,
+    "value": "ו",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "zayin",
+    "aka": null,
+    "value": "ז",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "chet",
+    "aka": null,
+    "value": "ח",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "tet",
+    "aka": null,
+    "value": "ט",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "yod",
+    "aka": null,
+    "value": "י",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "kaf",
+    "aka": "khaf",
+    "value": "כ",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "kaf-final",
+    "aka": "khaf-final",
+    "value": "ך",
+    "final": true,
+    "begadKepat": true
+  },
+  {
+    "name": "lamed",
+    "aka": null,
+    "value": "ל",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "mem",
+    "aka": null,
+    "value": "מ",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "mem-final",
+    "aka": null,
+    "value": "ם",
+    "final": true,
+    "begadKepat": false
+  },
+  {
+    "name": "nun",
+    "aka": null,
+    "value": "נ",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "nun-final",
+    "aka": null,
+    "value": "ן",
+    "final": true,
+    "begadKepat": false
+  },
+  {
+    "name": "samekh",
+    "aka": null,
+    "value": "ס",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "ayin",
+    "aka": null,
+    "value": "ע",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "peh",
+    "aka": "feh",
+    "value": "פ",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "peh-final",
+    "aka": "feh-final",
+    "value": "ף",
+    "final": true,
+    "begadKepat": true
+  },
+  {
+    "name": "tsadeh",
+    "aka": null,
+    "value": "צ",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "tsadeh-final",
+    "aka": null,
+    "value": "ץ",
+    "final": true,
+    "begadKepat": false
+  },
+  {
+    "name": "qof",
+    "aka": null,
+    "value": "ק",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "resh",
+    "aka": null,
+    "value": "ר",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "shin",
+    "aka": "sin",
+    "value": "ש",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "tav",
+    "aka": null,
+    "value": "ת",
+    "final": false,
+    "begadKepat": true
+  }
+]
