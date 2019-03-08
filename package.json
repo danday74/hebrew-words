@@ -1,7 +1,7 @@
 {
-  "name": "node-template-18",
-  "version": "1.1.8",
-  "description": "Template for creating an npm package in 2018",
+  "name": "node-template-19",
+  "version": "0.0.1",
+  "description": "Template for creating an npm package in 2019",
   "author": "danday74",
   "license": "ISC",
   "main": "index.js",
@@ -24,12 +24,12 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danday74/node-template-18.git"
+    "url": "git+https://github.com/danday74/node-template-19.git"
   },
   "bugs": {
-    "url": "https://github.com/danday74/node-template-18/issues"
+    "url": "https://github.com/danday74/node-template-19/issues"
   },
-  "homepage": "https://github.com/danday74/node-template-18#readme",
+  "homepage": "https://github.com/danday74/node-template-19#readme",
   "comment": "coveralls@2.11.16",
   "husky": {
     "hooks": {
