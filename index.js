@@ -1,7 +1,7 @@
-const example = require('./js/example')
+const hebrewWords = require('./js/hebrew-words')
 
-const main = () => {
-  return example()
+const main = word => {
+  return hebrewWords(word)
 }
 
 module.exports = main
