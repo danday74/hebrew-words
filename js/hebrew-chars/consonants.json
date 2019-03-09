@@ -167,40 +167,35 @@
     "begadKepat": false,
     "chars": "f"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "peh-final",
-    "aka": "feh-final",
+    "value": "ףּ",
+    "final": true,
+    "begadKepat": true,
+    "chars": "p"
+  },
+  {
+    "name": "feh-final",
     "value": "ף",
     "final": true,
-    "begadKepat": true
+    "begadKepat": false,
+    "chars": "f"
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "tsadeh",
     "aka": null,
