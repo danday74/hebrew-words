@@ -78,11 +78,35 @@
   },
   {
     "name": "kaf",
-    "aka": "khaf",
+    "value": "כּ",
+    "final": false,
+    "begadKepat": true,
+    "chars": "k"
+  },
+  {
+    "name": "khaf",
     "value": "כ",
     "final": false,
-    "begadKepat": true
+    "begadKepat": false,
+    "chars": "ch"
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "kaf-final",
     "aka": "khaf-final",
@@ -90,6 +114,15 @@
     "final": true,
     "begadKepat": true
   },
+
+
+
+
+
+
+
+
+
   {
     "name": "lamed",
     "aka": null,
