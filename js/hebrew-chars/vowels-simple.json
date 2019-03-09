@@ -2,43 +2,36 @@
   {
     "name": "patah",
     "value": "ַ",
-    "type": "simple",
     "short": true
   },
   {
     "name": "qamats",
     "value": "ָ",
-    "type": "simple",
     "short": false
   },
   {
     "name": "segol",
     "value": "ֶ",
-    "type": "simple",
     "short": true
   },
   {
     "name": "tsere",
     "value": "ֵ",
-    "type": "simple",
     "short": false
   },
   {
     "name": "hiriq",
     "value": "ִ",
-    "type": "simple",
     "short": true
   },
   {
     "name": "holem",
     "value": "ֹ",
-    "type": "simple",
     "short": false
   },
   {
     "name": "qubbuts",
     "value": "ֻ",
-    "type": "simple",
     "short": true
   }
 ]

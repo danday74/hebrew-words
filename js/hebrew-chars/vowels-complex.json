@@ -2,55 +2,46 @@
   {
     "name": "qamats-heh",
     "value": "ָה",
-    "type": "complex",
     "short": false
   },
   {
     "name": "segol-heh",
     "value": "ֶה",
-    "type": "complex",
     "short": false
   },
   {
     "name": "segol-yod",
     "value": "ֶי",
-    "type": "complex",
     "short": false
   },
   {
     "name": "tsere-heh",
     "value": "ֵה",
-    "type": "complex",
     "short": false
   },
   {
     "name": "tsere-yod",
     "value": "ֵי",
-    "type": "complex",
     "short": false
   },
   {
     "name": "hiriq-yod",
     "value": "ִי",
-    "type": "complex",
     "short": false
   },
   {
     "name": "holem-heh",
     "value": "ֹה",
-    "type": "complex",
     "short": false
   },
   {
     "name": "holem-vav",
     "value": "וֹ",
-    "type": "complex",
     "short": false
   },
   {
     "name": "shuruq",
     "value": "וּ",
-    "type": "complex",
     "short": false
   }
 ]
