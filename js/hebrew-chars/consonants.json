@@ -153,24 +153,19 @@
     "begadKepat": false,
     "chars": ""
   },
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "peh",
-    "aka": "feh",
+    "value": "פּ",
+    "final": false,
+    "begadKepat": true,
+    "chars": "p"
+  },
+  {
+    "name": "feh",
     "value": "פ",
     "final": false,
-    "begadKepat": true
+    "begadKepat": false,
+    "chars": "f"
   },
 
 
