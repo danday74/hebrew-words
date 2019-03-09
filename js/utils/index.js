@@ -6,7 +6,7 @@ const strReplaceAtPos = (str, idx, char) => {
 }
 
 const debugWord = (word, msg = null) => {
-  /* istanbul ignore next */
+  /* istanbul ignore else */
   if (msg) console.log(msg)
   word = word.split('')
   word.forEach((char, i) => {

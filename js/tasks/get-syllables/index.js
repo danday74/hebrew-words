@@ -14,6 +14,7 @@ const getSyllables = obj => {
 
   const wordAfter = word
 
+  /* istanbul ignore else */
   if (wordBefore !== wordAfter) {
     utils.debugWord(wordBefore, 'before')
     utils.debugWord(wordAfter, 'after')
