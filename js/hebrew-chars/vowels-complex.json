@@ -1,56 +1,56 @@
 [
   {
     "name": "qamats-heh",
-    "value": "ָה",
-    "chars": ["a"],
+    "char": "ָה",
+    "sounds": ["a"],
     "short": false
   },
   {
     "name": "segol-heh",
-    "value": "ֶה",
-    "chars": ["e"],
+    "char": "ֶה",
+    "sounds": ["e"],
     "short": false
   },
   {
     "name": "segol-yod",
-    "value": "ֶי",
-    "chars": ["e", "ey"],
+    "char": "ֶי",
+    "sounds": ["e", "ey"],
     "short": false
   },
   {
     "name": "tsere-heh",
-    "value": "ֵה",
-    "chars": ["e"],
+    "char": "ֵה",
+    "sounds": ["e"],
     "short": false
   },
   {
     "name": "tsere-yod",
-    "value": "ֵי",
-    "chars": ["e", "ey"],
+    "char": "ֵי",
+    "sounds": ["e", "ey"],
     "short": false
   },
   {
     "name": "hiriq-yod",
-    "value": "ִי",
-    "chars": ["ee"],
+    "char": "ִי",
+    "sounds": ["ee"],
     "short": false
   },
   {
     "name": "holem-heh",
-    "value": "ֹה",
-    "chars": ["o"],
+    "char": "ֹה",
+    "sounds": ["o"],
     "short": false
   },
   {
     "name": "holem-vav",
-    "value": "וֹ",
-    "chars": ["o"],
+    "char": "וֹ",
+    "sounds": ["o"],
     "short": false
   },
   {
     "name": "shuruq",
-    "value": "וּ",
-    "chars": ["oo"],
+    "char": "וּ",
+    "sounds": ["oo"],
     "short": false
   }
 ]

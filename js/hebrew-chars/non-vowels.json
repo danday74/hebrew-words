@@ -1,22 +1,22 @@
 [
   {
     "name": "sheva",
-    "value": "ְ",
-    "chars": ["e"]
+    "char": "ְ",
+    "sounds": ["e"]
   },
   {
     "name": "hataf-patah",
-    "value": "ֲ",
-    "chars": ["a"]
+    "char": "ֲ",
+    "sounds": ["a"]
   },
   {
     "name": "hataf-qamats",
-    "value": "ֳ",
-    "chars": ["o"]
+    "char": "ֳ",
+    "sounds": ["o"]
   },
   {
     "name": "hataf-segol",
-    "value": "ֱ",
-    "chars": ["e"]
+    "char": "ֱ",
+    "sounds": ["e"]
   }
 ]

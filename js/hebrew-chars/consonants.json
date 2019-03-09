@@ -1,232 +1,232 @@
 [
   {
     "name": "alef",
-    "value": "א",
-    "chars": [""],
+    "char": "א",
+    "sounds": [""],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "bet",
-    "value": "בּ",
-    "chars": ["b"],
+    "char": "בּ",
+    "sounds": ["b"],
     "final": false,
     "begadKepat": true
   },
   {
     "name": "vet",
-    "value": "ב",
-    "chars": ["v"],
+    "char": "ב",
+    "sounds": ["v"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "gimel",
-    "value": "ג",
-    "chars": ["g"],
+    "char": "ג",
+    "sounds": ["g"],
     "final": false,
     "begadKepat": true
   },
   {
     "name": "dalet",
-    "value": "ד",
-    "chars": ["d"],
+    "char": "ד",
+    "sounds": ["d"],
     "final": false,
     "begadKepat": true
   },
   {
     "name": "heh",
-    "value": "ה",
-    "chars": ["h"],
+    "char": "ה",
+    "sounds": ["h"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "vav",
-    "value": "ו",
-    "chars": ["v"],
+    "char": "ו",
+    "sounds": ["v"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "zayin",
-    "value": "ז",
-    "chars": ["z"],
+    "char": "ז",
+    "sounds": ["z"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "chet",
-    "value": "ח",
-    "chars": ["ch"],
+    "char": "ח",
+    "sounds": ["ch"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "tet",
-    "value": "ט",
-    "chars": ["t"],
+    "char": "ט",
+    "sounds": ["t"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "yod",
-    "value": "י",
-    "chars": ["y"],
+    "char": "י",
+    "sounds": ["y"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "kaf",
-    "value": "כּ",
-    "chars": ["k"],
+    "char": "כּ",
+    "sounds": ["k"],
     "final": false,
     "begadKepat": true
   },
   {
     "name": "khaf",
-    "value": "כ",
-    "chars": ["ch"],
+    "char": "כ",
+    "sounds": ["ch"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "kaf-final",
-    "value": "ךּ",
-    "chars": ["k"],
+    "char": "ךּ",
+    "sounds": ["k"],
     "final": true,
     "begadKepat": true
   },
   {
     "name": "khaf-final",
-    "value": "ך",
-    "chars": ["ch"],
+    "char": "ך",
+    "sounds": ["ch"],
     "final": true,
     "begadKepat": false
   },
   {
     "name": "lamed",
-    "value": "ל",
-    "chars": ["l"],
+    "char": "ל",
+    "sounds": ["l"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "mem",
-    "value": "מ",
-    "chars": ["m"],
+    "char": "מ",
+    "sounds": ["m"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "mem-final",
-    "value": "ם",
-    "chars": ["m"],
+    "char": "ם",
+    "sounds": ["m"],
     "final": true,
     "begadKepat": false
   },
   {
     "name": "nun",
-    "value": "נ",
-    "chars": ["n"],
+    "char": "נ",
+    "sounds": ["n"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "nun-final",
-    "value": "ן",
-    "chars": ["n"],
+    "char": "ן",
+    "sounds": ["n"],
     "final": true,
     "begadKepat": false
   },
   {
     "name": "samekh",
-    "value": "ס",
-    "chars": ["s"],
+    "char": "ס",
+    "sounds": ["s"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "ayin",
-    "value": "ע",
-    "chars": [""],
+    "char": "ע",
+    "sounds": [""],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "peh",
-    "value": "פּ",
-    "chars": ["p"],
+    "char": "פּ",
+    "sounds": ["p"],
     "final": false,
     "begadKepat": true
   },
   {
     "name": "feh",
-    "value": "פ",
-    "chars": ["f"],
+    "char": "פ",
+    "sounds": ["f"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "peh-final",
-    "value": "ףּ",
-    "chars": ["p"],
+    "char": "ףּ",
+    "sounds": ["p"],
     "final": true,
     "begadKepat": true
   },
   {
     "name": "feh-final",
-    "value": "ף",
-    "chars": ["f"],
+    "char": "ף",
+    "sounds": ["f"],
     "final": true,
     "begadKepat": false
   },
   {
     "name": "tsadeh",
-    "value": "צ",
-    "chars": ["ts"],
+    "char": "צ",
+    "sounds": ["ts"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "tsadeh-final",
-    "value": "ץ",
-    "chars": ["ts"],
+    "char": "ץ",
+    "sounds": ["ts"],
     "final": true,
     "begadKepat": false
   },
   {
     "name": "qof",
-    "value": "ק",
-    "chars": ["k"],
+    "char": "ק",
+    "sounds": ["k"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "resh",
-    "value": "ר",
-    "chars": ["r"],
+    "char": "ר",
+    "sounds": ["r"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "sin",
-    "value": "שׂ",
-    "chars": ["s"],
+    "char": "שׂ",
+    "sounds": ["s"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "shin",
-    "value": "שׁ",
-    "chars": ["sh"],
+    "char": "שׁ",
+    "sounds": ["sh"],
     "final": false,
     "begadKepat": false
   },
   {
     "name": "tav",
-    "value": "ת",
-    "chars": ["t"],
+    "char": "ת",
+    "sounds": ["t"],
     "final": false,
     "begadKepat": true
   }
