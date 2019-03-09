@@ -4,8 +4,8 @@ const vowelsComplex = require('./vowels-complex')
 const nonVowels = require('./non-vowels')
 const dagesh = {
   name: 'dagesh',
-  value: 'ּ',
-  chars: ['']
+  char: 'ּ',
+  sounds: ['']
 }
 const all = [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
 

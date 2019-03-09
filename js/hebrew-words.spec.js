@@ -16,12 +16,24 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('shalom', () => {
+  it('sha-lom   completeness, soundness', () => {
     const word = 'שָׁלוֹם'
     const actual = hebrewWords(word)
     const expected = {
       word,
       consonants: ['shin', 'lamed', 'vav', 'mem-final'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('eesh-sha   woman, wife', () => {
+    const word = 'אִשָּׁה'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      consonants: ['alef', 'shin', 'heh'],
       ok: true,
       error: null
     }
