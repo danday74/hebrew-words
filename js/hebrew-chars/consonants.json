@@ -90,30 +90,25 @@
     "begadKepat": false,
     "chars": "ch"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "kaf-final",
-    "aka": "khaf-final",
+    "value": "ךּ",
+    "final": true,
+    "begadKepat": true,
+    "chars": "k"
+  },
+  {
+    "name": "khaf-final",
     "value": "ך",
     "final": true,
-    "begadKepat": true
+    "begadKepat": false,
+    "chars": "ch"
   },
+
+
+
+
+
 
 
 
