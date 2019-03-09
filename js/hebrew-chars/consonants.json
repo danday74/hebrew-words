@@ -104,69 +104,67 @@
     "begadKepat": false,
     "chars": "ch"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "lamed",
-    "aka": null,
     "value": "ל",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "l"
   },
   {
     "name": "mem",
-    "aka": null,
     "value": "מ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "m"
   },
   {
     "name": "mem-final",
-    "aka": null,
     "value": "ם",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "m"
   },
   {
     "name": "nun",
-    "aka": null,
     "value": "נ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "n"
   },
   {
     "name": "nun-final",
-    "aka": null,
     "value": "ן",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "n"
   },
   {
     "name": "samekh",
-    "aka": null,
     "value": "ס",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "s"
   },
   {
     "name": "ayin",
-    "aka": null,
     "value": "ע",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": ""
   },
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "peh",
     "aka": "feh",
@@ -174,6 +172,33 @@
     "final": false,
     "begadKepat": true
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "peh-final",
     "aka": "feh-final",
