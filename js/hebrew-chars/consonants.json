@@ -195,7 +195,7 @@
     "name": "peh",
     "char": "פּ",
     "sounds": ["p"],
-    "trans": "",
+    "trans": "p",
     "final": false,
     "begadKepat": true
   },
@@ -203,7 +203,7 @@
     "name": "feh",
     "char": "פ",
     "sounds": ["f"],
-    "trans": "",
+    "trans": "ꝑ",
     "final": false,
     "begadKepat": false
   },
@@ -211,7 +211,7 @@
     "name": "peh-final",
     "char": "ףּ",
     "sounds": ["p"],
-    "trans": "",
+    "trans": "p",
     "final": true,
     "begadKepat": true
   },
@@ -219,7 +219,7 @@
     "name": "feh-final",
     "char": "ף",
     "sounds": ["f"],
-    "trans": "",
+    "trans": "ꝑ",
     "final": true,
     "begadKepat": false
   },
