@@ -227,7 +227,7 @@
     "name": "tsadeh",
     "char": "צ",
     "sounds": ["ts"],
-    "trans": "",
+    "trans": "ṣ",
     "final": false,
     "begadKepat": false
   },
@@ -235,7 +235,7 @@
     "name": "tsadeh-final",
     "char": "ץ",
     "sounds": ["ts"],
-    "trans": "",
+    "trans": "ṣ",
     "final": true,
     "begadKepat": false
   },
@@ -243,7 +243,7 @@
     "name": "qof",
     "char": "ק",
     "sounds": ["k"],
-    "trans": "",
+    "trans": "q",
     "final": false,
     "begadKepat": false
   },
@@ -251,7 +251,7 @@
     "name": "resh",
     "char": "ר",
     "sounds": ["r"],
-    "trans": "",
+    "trans": "r",
     "final": false,
     "begadKepat": false
   },
@@ -273,10 +273,18 @@
   },
   {
     "name": "tav",
-    "char": "ת",
+    "char": "תּ",
     "sounds": ["t"],
-    "trans": "",
+    "trans": "t",
     "final": false,
     "begadKepat": true
+  },
+  {
+    "name": "tav",
+    "char": "ת",
+    "sounds": ["t"],
+    "trans": "ṯ",
+    "final": false,
+    "begadKepat": false
   }
 ]
