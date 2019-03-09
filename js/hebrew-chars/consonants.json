@@ -3,7 +3,7 @@
     "name": "alef",
     "char": "א",
     "sounds": [""],
-    "trans": "",
+    "trans": "’",
     "final": false,
     "begadKepat": false
   },
@@ -11,7 +11,7 @@
     "name": "bet",
     "char": "בּ",
     "sounds": ["b"],
-    "trans": "",
+    "trans": "b",
     "final": false,
     "begadKepat": true
   },
@@ -19,15 +19,31 @@
     "name": "vet",
     "char": "ב",
     "sounds": ["v"],
-    "trans": "",
+    "trans": "ḇ",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "gimel",
+    "char": "גּ",
+    "sounds": ["g"],
+    "trans": "g",
+    "final": false,
+    "begadKepat": true
+  },
+  {
+    "name": "gimel",
     "char": "ג",
     "sounds": ["g"],
-    "trans": "",
+    "trans": "ǥ",
+    "final": false,
+    "begadKepat": false
+  },
+  {
+    "name": "dalet",
+    "char": "דּ",
+    "sounds": ["d"],
+    "trans": "d",
     "final": false,
     "begadKepat": true
   },
@@ -35,9 +51,9 @@
     "name": "dalet",
     "char": "ד",
     "sounds": ["d"],
-    "trans": "",
+    "trans": "ḏ",
     "final": false,
-    "begadKepat": true
+    "begadKepat": false
   },
   {
     "name": "heh",
