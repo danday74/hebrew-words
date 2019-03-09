@@ -7,5 +7,6 @@ module.exports = {
   consonants,
   vowelsSimple,
   vowelsComplex,
-  nonVowels
+  nonVowels,
+  all: [...consonants, ...vowelsSimple, ...vowelsComplex, ...nonVowels]
 }
