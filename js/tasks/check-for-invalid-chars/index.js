@@ -5,7 +5,7 @@ const index = obj => {
 
   const word = obj.word
 
-  const allChars = flatten(map(hebrewChars.all, 'char'))
+  const allChars = flatten(map(hebrewChars.allExcComplexVowels, 'char'))
 
   let ok = true
   let error = null

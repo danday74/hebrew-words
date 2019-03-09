@@ -10,12 +10,14 @@ const dagesh = {
   trans: null
 }
 
-const all = [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
+const allExcComplexVowels = [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
+const allIncComplexVowels = [...consonants, ...vowelsSimple, ...nonVowels, dagesh, ...vowelsComplex]
 
 module.exports = {
   consonants,
   vowelsSimple,
   vowelsComplex,
   nonVowels,
-  all
+  allExcComplexVowels,
+  allIncComplexVowels
 }
