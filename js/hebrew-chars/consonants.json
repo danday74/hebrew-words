@@ -1,70 +1,66 @@
 [
   {
     "name": "alef",
-    "aka": null,
     "value": "א",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "bet",
-    "aka": "vet",
-    "value": "ב",
+    "value": "בּ",
     "final": false,
     "begadKepat": true
   },
   {
+    "name": "vet",
+    "value": "ב",
+    "final": false,
+    "begadKepat": false
+  },
+  {
     "name": "gimel",
-    "aka": null,
     "value": "ג",
     "final": false,
     "begadKepat": true
   },
   {
     "name": "dalet",
-    "aka": null,
     "value": "ד",
     "final": false,
     "begadKepat": true
   },
   {
     "name": "heh",
-    "aka": null,
     "value": "ה",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "vav",
-    "aka": null,
     "value": "ו",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "zayin",
-    "aka": null,
     "value": "ז",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "chet",
-    "aka": null,
     "value": "ח",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "tet",
-    "aka": null,
     "value": "ט",
     "final": false,
     "begadKepat": false
   },
   {
     "name": "yod",
-    "aka": null,
     "value": "י",
     "final": false,
     "begadKepat": false
