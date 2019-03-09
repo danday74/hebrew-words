@@ -181,35 +181,25 @@
     "begadKepat": false,
     "chars": "f"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "tsadeh",
-    "aka": null,
     "value": "צ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "ts"
   },
   {
     "name": "tsadeh-final",
-    "aka": null,
     "value": "ץ",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "ts"
   },
+
+
+
+
+  
   {
     "name": "qof",
     "aka": null,
