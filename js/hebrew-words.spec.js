@@ -16,7 +16,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('hebrew word', () => {
+  it('shalom', () => {
     const word = 'שָׁלוֹם'
     const actual = hebrewWords(word)
     const expected = {
