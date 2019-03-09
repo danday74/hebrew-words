@@ -2,55 +2,55 @@
   {
     "name": "qamats-heh",
     "value": "ָה",
-    "short": false,
-    "chars": ["a"]
+    "chars": ["a"],
+    "short": false
   },
   {
     "name": "segol-heh",
     "value": "ֶה",
-    "short": false,
-    "chars": ["e"]
+    "chars": ["e"],
+    "short": false
   },
   {
     "name": "segol-yod",
     "value": "ֶי",
-    "short": false,
-    "chars": ["e", "ey"]
+    "chars": ["e", "ey"],
+    "short": false
   },
   {
     "name": "tsere-heh",
     "value": "ֵה",
-    "short": false,
-    "chars": ["e"]
+    "chars": ["e"],
+    "short": false
   },
   {
     "name": "tsere-yod",
     "value": "ֵי",
-    "short": false,
-    "chars": ["e", "ey"]
+    "chars": ["e", "ey"],
+    "short": false
   },
   {
     "name": "hiriq-yod",
     "value": "ִי",
-    "short": false,
-    "chars": ["ee"]
+    "chars": ["ee"],
+    "short": false
   },
   {
     "name": "holem-heh",
     "value": "ֹה",
-    "short": false,
-    "chars": ["o"]
+    "chars": ["o"],
+    "short": false
   },
   {
     "name": "holem-vav",
     "value": "וֹ",
-    "short": false,
-    "chars": ["o"]
+    "chars": ["o"],
+    "short": false
   },
   {
     "name": "shuruq",
     "value": "וּ",
-    "short": false,
-    "chars": ["oo"]
+    "chars": ["oo"],
+    "short": false
   }
 ]

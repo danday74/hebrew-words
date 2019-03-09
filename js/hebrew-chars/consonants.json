@@ -2,232 +2,232 @@
   {
     "name": "alef",
     "value": "א",
+    "chars": [""],
     "final": false,
-    "begadKepat": false,
-    "chars": [""]
+    "begadKepat": false
   },
   {
     "name": "bet",
     "value": "בּ",
+    "chars": ["b"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["b"]
+    "begadKepat": true
   },
   {
     "name": "vet",
     "value": "ב",
+    "chars": ["v"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["v"]
+    "begadKepat": false
   },
   {
     "name": "gimel",
     "value": "ג",
+    "chars": ["g"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["g"]
+    "begadKepat": true
   },
   {
     "name": "dalet",
     "value": "ד",
+    "chars": ["d"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["d"]
+    "begadKepat": true
   },
   {
     "name": "heh",
     "value": "ה",
+    "chars": ["h"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["h"]
+    "begadKepat": false
   },
   {
     "name": "vav",
     "value": "ו",
+    "chars": ["v"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["v"]
+    "begadKepat": false
   },
   {
     "name": "zayin",
     "value": "ז",
+    "chars": ["z"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["z"]
+    "begadKepat": false
   },
   {
     "name": "chet",
     "value": "ח",
+    "chars": ["ch"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["ch"]
+    "begadKepat": false
   },
   {
     "name": "tet",
     "value": "ט",
+    "chars": ["t"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["t"]
+    "begadKepat": false
   },
   {
     "name": "yod",
     "value": "י",
+    "chars": ["y"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["y"]
+    "begadKepat": false
   },
   {
     "name": "kaf",
     "value": "כּ",
+    "chars": ["k"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["k"]
+    "begadKepat": true
   },
   {
     "name": "khaf",
     "value": "כ",
+    "chars": ["ch"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["ch"]
+    "begadKepat": false
   },
   {
     "name": "kaf-final",
     "value": "ךּ",
+    "chars": ["k"],
     "final": true,
-    "begadKepat": true,
-    "chars": ["k"]
+    "begadKepat": true
   },
   {
     "name": "khaf-final",
     "value": "ך",
+    "chars": ["ch"],
     "final": true,
-    "begadKepat": false,
-    "chars": ["ch"]
+    "begadKepat": false
   },
   {
     "name": "lamed",
     "value": "ל",
+    "chars": ["l"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["l"]
+    "begadKepat": false
   },
   {
     "name": "mem",
     "value": "מ",
+    "chars": ["m"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["m"]
+    "begadKepat": false
   },
   {
     "name": "mem-final",
     "value": "ם",
+    "chars": ["m"],
     "final": true,
-    "begadKepat": false,
-    "chars": ["m"]
+    "begadKepat": false
   },
   {
     "name": "nun",
     "value": "נ",
+    "chars": ["n"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["n"]
+    "begadKepat": false
   },
   {
     "name": "nun-final",
     "value": "ן",
+    "chars": ["n"],
     "final": true,
-    "begadKepat": false,
-    "chars": ["n"]
+    "begadKepat": false
   },
   {
     "name": "samekh",
     "value": "ס",
+    "chars": ["s"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["s"]
+    "begadKepat": false
   },
   {
     "name": "ayin",
     "value": "ע",
+    "chars": [""],
     "final": false,
-    "begadKepat": false,
-    "chars": [""]
+    "begadKepat": false
   },
   {
     "name": "peh",
     "value": "פּ",
+    "chars": ["p"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["p"]
+    "begadKepat": true
   },
   {
     "name": "feh",
     "value": "פ",
+    "chars": ["f"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["f"]
+    "begadKepat": false
   },
   {
     "name": "peh-final",
     "value": "ףּ",
+    "chars": ["p"],
     "final": true,
-    "begadKepat": true,
-    "chars": ["p"]
+    "begadKepat": true
   },
   {
     "name": "feh-final",
     "value": "ף",
+    "chars": ["f"],
     "final": true,
-    "begadKepat": false,
-    "chars": ["f"]
+    "begadKepat": false
   },
   {
     "name": "tsadeh",
     "value": "צ",
+    "chars": ["ts"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["ts"]
+    "begadKepat": false
   },
   {
     "name": "tsadeh-final",
     "value": "ץ",
+    "chars": ["ts"],
     "final": true,
-    "begadKepat": false,
-    "chars": ["ts"]
+    "begadKepat": false
   },
   {
     "name": "qof",
     "value": "ק",
+    "chars": ["k"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["k"]
+    "begadKepat": false
   },
   {
     "name": "resh",
     "value": "ר",
+    "chars": ["r"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["r"]
+    "begadKepat": false
   },
   {
     "name": "sin",
     "value": "שׂ",
+    "chars": ["s"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["s"]
+    "begadKepat": false
   },
   {
     "name": "shin",
     "value": "שׁ",
+    "chars": ["sh"],
     "final": false,
-    "begadKepat": false,
-    "chars": ["sh"]
+    "begadKepat": false
   },
   {
     "name": "tav",
     "value": "ת",
+    "chars": ["t"],
     "final": false,
-    "begadKepat": true,
-    "chars": ["t"]
+    "begadKepat": true
   }
 ]
