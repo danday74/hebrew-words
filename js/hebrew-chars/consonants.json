@@ -195,25 +195,26 @@
     "begadKepat": false,
     "chars": "ts"
   },
+  {
+    "name": "qof",
+    "value": "ק",
+    "final": false,
+    "begadKepat": false,
+    "chars": "k"
+  },
+  {
+    "name": "resh",
+    "value": "ר",
+    "final": false,
+    "begadKepat": false,
+    "chars": "r"
+  },
+
 
 
 
 
   
-  {
-    "name": "qof",
-    "aka": null,
-    "value": "ק",
-    "final": false,
-    "begadKepat": false
-  },
-  {
-    "name": "resh",
-    "aka": null,
-    "value": "ר",
-    "final": false,
-    "begadKepat": false
-  },
   {
     "name": "shin",
     "aka": "sin",
