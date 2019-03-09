@@ -10,7 +10,6 @@ const checkForInvalidChars = word => {
 
   for (let i = 0; i < word.length; i++) {
     const char = word[i]
-    console.log(char)
     if (!allChars.includes(char)) {
       ok = false
       error = `Non Hebraic character - ${char} - detected in word`
