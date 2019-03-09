@@ -1,44 +1,58 @@
 [
   {
+    "id": "a",
     "name": "patah",
     "char": "ַ",
     "sounds": ["a"],
+    "trans": "a",
     "short": true
   },
   {
+    "id": "ā",
     "name": "qamats",
     "char": "ָ",
     "sounds": ["a", "o"],
+    "trans": "ā",
     "short": false
   },
   {
+    "id": "e",
     "name": "segol",
     "char": "ֶ",
     "sounds": ["e"],
+    "trans": "e",
     "short": true
   },
   {
+    "id": "ē",
     "name": "tsere",
     "char": "ֵ",
     "sounds": ["e"],
+    "trans": "ē",
     "short": false
   },
   {
+    "id": "i",
     "name": "hiriq",
     "char": "ִ",
     "sounds": ["ee"],
+    "trans": "i",
     "short": true
   },
   {
+    "id": "ō",
     "name": "holem",
     "char": "ֹ",
     "sounds": ["o"],
+    "trans": "ō",
     "short": false
   },
   {
+    "id": "u",
     "name": "qubbuts",
     "char": "ֻ",
     "sounds": ["oo"],
+    "trans": "u",
     "short": true
   }
 ]
