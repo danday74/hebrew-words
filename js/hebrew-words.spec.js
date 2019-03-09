@@ -16,7 +16,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('sha-lom    completeness, soundness', () => {
+  it('sha-lom     completeness, soundness', () => {
     const word = 'שָׁלוֹם'
     const actual = hebrewWords(word)
     const expected = {
@@ -27,8 +27,30 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('eesh-sha   woman, wife', () => {
+  it('eesh-sha    woman, wife', () => {
     const word = 'אִשָּׁה'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('heeg-geed   he declared, he told', () => {
+    const word = 'הִגִּיד'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('meesh-kan   dwelling place, tabernacle', () => {
+    const word = 'מִשְׁכָּן'
     const actual = hebrewWords(word)
     const expected = {
       word,
