@@ -209,24 +209,25 @@
     "begadKepat": false,
     "chars": "r"
   },
-
-
-
-
-
-  
+  {
+    "name": "sin",
+    "value": "שׂ",
+    "final": false,
+    "begadKepat": false,
+    "chars": "s"
+  },
   {
     "name": "shin",
-    "aka": "sin",
-    "value": "ש",
+    "value": "שׁ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "sh"
   },
   {
     "name": "tav",
-    "aka": null,
     "value": "ת",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "chars": "t"
   }
 ]
