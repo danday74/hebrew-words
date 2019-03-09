@@ -1,6 +1,6 @@
 [
   {
-    "id": "",
+    "id": "1",
     "name": "qamats-heh",
     "char": "ָה",
     "sounds": ["a"],
@@ -8,7 +8,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "2",
     "name": "segol-heh",
     "char": "ֶה",
     "sounds": ["e"],
@@ -16,7 +16,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "3",
     "name": "segol-yod",
     "char": "ֶי",
     "sounds": ["e", "ey"],
@@ -24,7 +24,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "4",
     "name": "tsere-heh",
     "char": "ֵה",
     "sounds": ["e"],
@@ -32,7 +32,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "5",
     "name": "tsere-yod",
     "char": "ֵי",
     "sounds": ["e", "ey"],
@@ -40,7 +40,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "6",
     "name": "hiriq-yod",
     "char": "ִי",
     "sounds": ["ee"],
@@ -48,7 +48,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "7",
     "name": "holem-heh",
     "char": "ֹה",
     "sounds": ["o"],
@@ -56,7 +56,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "8",
     "name": "holem-vav",
     "char": "וֹ",
     "sounds": ["o"],
@@ -64,7 +64,7 @@
     "short": false
   },
   {
-    "id": "",
+    "id": "9",
     "name": "shuruq",
     "char": "וּ",
     "sounds": ["oo"],
