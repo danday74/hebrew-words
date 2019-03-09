@@ -1,6 +1,6 @@
 const consonants = require('./consonants')
-const vowelsSimple = require('./vowels-simple')
-const vowelsComplex = require('./vowels-complex')
+const simpleVowels = require('./vowels-simple')
+const complexVowels = require('./vowels-complex')
 const nonVowels = require('./non-vowels')
 const dagesh = {
   id: 'O',
@@ -10,14 +10,17 @@ const dagesh = {
   trans: null
 }
 
-const allExcComplexVowels = [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
-const allIncComplexVowels = [...consonants, ...vowelsSimple, ...nonVowels, dagesh, ...vowelsComplex]
+const allExcComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh]
+const allIncComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh, ...complexVowels]
+const begadKepat = consonants.filter(char => char.begadKepat)
 
 module.exports = {
+  dagesh,
   consonants,
-  vowelsSimple,
-  vowelsComplex,
+  simpleVowels,
+  complexVowels,
   nonVowels,
   allExcComplexVowels,
-  allIncComplexVowels
+  allIncComplexVowels,
+  begadKepat
 }
