@@ -107,7 +107,7 @@
     "name": "kaf",
     "char": "כּ",
     "sounds": ["k"],
-    "trans": "",
+    "trans": "k",
     "final": false,
     "begadKepat": true
   },
@@ -115,7 +115,7 @@
     "name": "khaf",
     "char": "כ",
     "sounds": ["ch"],
-    "trans": "",
+    "trans": "ḵ",
     "final": false,
     "begadKepat": false
   },
@@ -123,7 +123,7 @@
     "name": "kaf-final",
     "char": "ךּ",
     "sounds": ["k"],
-    "trans": "",
+    "trans": "k",
     "final": true,
     "begadKepat": true
   },
@@ -131,7 +131,7 @@
     "name": "khaf-final",
     "char": "ך",
     "sounds": ["ch"],
-    "trans": "",
+    "trans": "ḵ",
     "final": true,
     "begadKepat": false
   },
@@ -139,7 +139,7 @@
     "name": "lamed",
     "char": "ל",
     "sounds": ["l"],
-    "trans": "",
+    "trans": "l",
     "final": false,
     "begadKepat": false
   },
@@ -147,7 +147,7 @@
     "name": "mem",
     "char": "מ",
     "sounds": ["m"],
-    "trans": "",
+    "trans": "m",
     "final": false,
     "begadKepat": false
   },
@@ -155,7 +155,7 @@
     "name": "mem-final",
     "char": "ם",
     "sounds": ["m"],
-    "trans": "",
+    "trans": "m",
     "final": true,
     "begadKepat": false
   },
@@ -163,7 +163,7 @@
     "name": "nun",
     "char": "נ",
     "sounds": ["n"],
-    "trans": "",
+    "trans": "n",
     "final": false,
     "begadKepat": false
   },
@@ -171,7 +171,7 @@
     "name": "nun-final",
     "char": "ן",
     "sounds": ["n"],
-    "trans": "",
+    "trans": "n",
     "final": true,
     "begadKepat": false
   },
