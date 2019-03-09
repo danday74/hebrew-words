@@ -181,7 +181,7 @@
   },
   {
     "id": "n",
-    "name": "nun",
+    "name": "noon",
     "char": "נ",
     "sounds": ["n"],
     "trans": "n",
@@ -190,7 +190,7 @@
   },
   {
     "id": "N",
-    "name": "nun-final",
+    "name": "noon-final",
     "char": "ן",
     "sounds": ["n"],
     "trans": "n",
