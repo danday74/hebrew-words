@@ -21,7 +21,6 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      consonants: ['shin', 'lamed', 'vav', 'mem-final'],
       ok: true,
       error: null
     }
@@ -33,7 +32,6 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      consonants: ['alef', 'shin', 'heh'],
       ok: true,
       error: null
     }
