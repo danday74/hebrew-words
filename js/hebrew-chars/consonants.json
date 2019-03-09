@@ -59,7 +59,7 @@
     "name": "heh",
     "char": "ה",
     "sounds": ["h"],
-    "trans": "",
+    "trans": "h",
     "final": false,
     "begadKepat": false
   },
@@ -67,7 +67,7 @@
     "name": "vav",
     "char": "ו",
     "sounds": ["v"],
-    "trans": "",
+    "trans": "w",
     "final": false,
     "begadKepat": false
   },
@@ -75,7 +75,7 @@
     "name": "zayin",
     "char": "ז",
     "sounds": ["z"],
-    "trans": "",
+    "trans": "z",
     "final": false,
     "begadKepat": false
   },
@@ -83,7 +83,7 @@
     "name": "chet",
     "char": "ח",
     "sounds": ["ch"],
-    "trans": "",
+    "trans": "ḥ",
     "final": false,
     "begadKepat": false
   },
@@ -91,7 +91,7 @@
     "name": "tet",
     "char": "ט",
     "sounds": ["t"],
-    "trans": "",
+    "trans": "ṭ",
     "final": false,
     "begadKepat": false
   },
@@ -99,7 +99,7 @@
     "name": "yod",
     "char": "י",
     "sounds": ["y"],
-    "trans": "",
+    "trans": "y",
     "final": false,
     "begadKepat": false
   },
