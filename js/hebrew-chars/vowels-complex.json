@@ -3,54 +3,54 @@
     "name": "qamats-heh",
     "value": "ָה",
     "short": false,
-    "chars": ""
+    "chars": ["a"]
   },
   {
     "name": "segol-heh",
     "value": "ֶה",
     "short": false,
-    "chars": ""
+    "chars": ["e"]
   },
   {
     "name": "segol-yod",
     "value": "ֶי",
     "short": false,
-    "chars": ""
+    "chars": ["e", "ey"]
   },
   {
     "name": "tsere-heh",
     "value": "ֵה",
     "short": false,
-    "chars": ""
+    "chars": ["e"]
   },
   {
     "name": "tsere-yod",
     "value": "ֵי",
     "short": false,
-    "chars": ""
+    "chars": ["e", "ey"]
   },
   {
     "name": "hiriq-yod",
     "value": "ִי",
     "short": false,
-    "chars": ""
+    "chars": ["ee"]
   },
   {
     "name": "holem-heh",
     "value": "ֹה",
     "short": false,
-    "chars": ""
+    "chars": ["o"]
   },
   {
     "name": "holem-vav",
     "value": "וֹ",
     "short": false,
-    "chars": ""
+    "chars": ["o"]
   },
   {
     "name": "shuruq",
     "value": "וּ",
     "short": false,
-    "chars": ""
+    "chars": ["oo"]
   }
 ]
