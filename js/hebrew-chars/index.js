@@ -7,11 +7,12 @@ const dagesh = {
   value: 'ּ',
   chars: ['']
 }
+const all = [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
 
 module.exports = {
   consonants,
   vowelsSimple,
   vowelsComplex,
   nonVowels,
-  all: [...consonants, ...vowelsSimple, ...nonVowels, dagesh]
+  all
 }
