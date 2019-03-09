@@ -3,67 +3,78 @@
     "name": "alef",
     "value": "א",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": ""
   },
   {
     "name": "bet",
     "value": "בּ",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "chars": "b"
   },
   {
     "name": "vet",
     "value": "ב",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "v"
   },
   {
     "name": "gimel",
     "value": "ג",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "chars": "g"
   },
   {
     "name": "dalet",
     "value": "ד",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "chars": "d"
   },
   {
     "name": "heh",
     "value": "ה",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "h"
   },
   {
     "name": "vav",
     "value": "ו",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "v"
   },
   {
     "name": "zayin",
     "value": "ז",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "z"
   },
   {
     "name": "chet",
     "value": "ח",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "ch"
   },
   {
     "name": "tet",
     "value": "ט",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "t"
   },
   {
     "name": "yod",
     "value": "י",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "chars": "y"
   },
   {
     "name": "kaf",
