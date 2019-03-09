@@ -1,7 +1,7 @@
 const {flatten, map} = require('lodash')
-const hebrewChars = require('../hebrew-chars')
+const hebrewChars = require('../../hebrew-chars')
 
-const checkForInvalidChars = obj => {
+const index = obj => {
 
   const word = obj.word
 
@@ -30,4 +30,4 @@ const checkForInvalidChars = obj => {
   obj.error = error
 }
 
-module.exports = checkForInvalidChars
+module.exports = index
