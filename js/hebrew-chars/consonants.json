@@ -6,7 +6,8 @@
     "sounds": [""],
     "trans": "’",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "b",
@@ -15,7 +16,8 @@
     "sounds": ["b"],
     "trans": "b",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ḇ",
@@ -24,7 +26,8 @@
     "sounds": ["v"],
     "trans": "ḇ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "g",
@@ -33,7 +36,8 @@
     "sounds": ["g"],
     "trans": "g",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ǥ",
@@ -42,7 +46,8 @@
     "sounds": ["g"],
     "trans": "ǥ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "d",
@@ -51,7 +56,8 @@
     "sounds": ["d"],
     "trans": "d",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ḏ",
@@ -60,7 +66,8 @@
     "sounds": ["d"],
     "trans": "ḏ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "h",
@@ -69,7 +76,8 @@
     "sounds": ["h"],
     "trans": "h",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": true
   },
   {
     "id": "w",
@@ -78,7 +86,8 @@
     "sounds": ["v"],
     "trans": "w",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": true
   },
   {
     "id": "z",
@@ -87,7 +96,8 @@
     "sounds": ["z"],
     "trans": "z",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "ḥ",
@@ -96,7 +106,8 @@
     "sounds": ["ch"],
     "trans": "ḥ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "ṭ",
@@ -105,7 +116,8 @@
     "sounds": ["t"],
     "trans": "ṭ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "y",
@@ -114,7 +126,8 @@
     "sounds": ["y"],
     "trans": "y",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": true
   },
   {
     "id": "k",
@@ -123,7 +136,8 @@
     "sounds": ["k"],
     "trans": "k",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ḵ",
@@ -132,7 +146,8 @@
     "sounds": ["ch"],
     "trans": "ḵ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "K",
@@ -141,7 +156,8 @@
     "sounds": ["k"],
     "trans": "k",
     "final": true,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "Ḵ",
@@ -150,7 +166,8 @@
     "sounds": ["ch"],
     "trans": "ḵ",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "l",
@@ -159,7 +176,8 @@
     "sounds": ["l"],
     "trans": "l",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "m",
@@ -168,7 +186,8 @@
     "sounds": ["m"],
     "trans": "m",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "M",
@@ -177,7 +196,8 @@
     "sounds": ["m"],
     "trans": "m",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "n",
@@ -186,7 +206,8 @@
     "sounds": ["n"],
     "trans": "n",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "N",
@@ -195,7 +216,8 @@
     "sounds": ["n"],
     "trans": "n",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "s",
@@ -204,7 +226,8 @@
     "sounds": ["s"],
     "trans": "s",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "‘",
@@ -213,7 +236,8 @@
     "sounds": [""],
     "trans": "‘",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "p",
@@ -222,7 +246,8 @@
     "sounds": ["p"],
     "trans": "p",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ꝑ",
@@ -231,7 +256,8 @@
     "sounds": ["f"],
     "trans": "ꝑ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "P",
@@ -240,7 +266,8 @@
     "sounds": ["p"],
     "trans": "p",
     "final": true,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "Ꝑ",
@@ -249,7 +276,8 @@
     "sounds": ["f"],
     "trans": "ꝑ",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "ṣ",
@@ -258,7 +286,8 @@
     "sounds": ["ts"],
     "trans": "ṣ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "Ṣ",
@@ -267,7 +296,8 @@
     "sounds": ["ts"],
     "trans": "ṣ",
     "final": true,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "q",
@@ -276,7 +306,8 @@
     "sounds": ["k"],
     "trans": "q",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "r",
@@ -285,7 +316,8 @@
     "sounds": ["r"],
     "trans": "r",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "ś",
@@ -294,7 +326,8 @@
     "sounds": ["s"],
     "trans": "ś",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "š",
@@ -303,7 +336,8 @@
     "sounds": ["sh"],
     "trans": "š",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   },
   {
     "id": "t",
@@ -312,7 +346,8 @@
     "sounds": ["t"],
     "trans": "t",
     "final": false,
-    "begadKepat": true
+    "begadKepat": true,
+    "canBeVowel": false
   },
   {
     "id": "ṯ",
@@ -321,6 +356,7 @@
     "sounds": ["t"],
     "trans": "ṯ",
     "final": false,
-    "begadKepat": false
+    "begadKepat": false,
+    "canBeVowel": false
   }
 ]
