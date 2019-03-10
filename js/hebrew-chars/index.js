@@ -10,6 +10,22 @@ const dagesh = {
   sounds: [''],
   trans: [null]
 }
+const plainQamats = {
+  id: 'ā',
+  name: 'qamats',
+  char: 'ָ',
+  sounds: ['a'],
+  trans: ['ā'],
+  short: false
+}
+const qamatsQatan = {
+  id: 'o',
+  name: 'qamats-qatan',
+  char: 'ָ',
+  sounds: ['o'],
+  trans: ['o'],
+  short: true
+}
 
 consonants = map(consonants, x => {
   x.type = 'C'
@@ -31,12 +47,14 @@ nonVowels = map(nonVowels, x => {
   return x
 })
 
-const allExcComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh]
-const allIncComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh, ...complexVowels]
+const allExcComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh, plainQamats, qamatsQatan]
+const allIncComplexVowels = [...consonants, ...simpleVowels, ...nonVowels, dagesh, plainQamats, qamatsQatan, ...complexVowels]
 const begadKepat = consonants.filter(char => char.begadKepat)
 
 module.exports = {
   dagesh,
+  plainQamats,
+  qamatsQatan,
   consonants,
   simpleVowels,
   complexVowels,

@@ -8,12 +8,12 @@
     "short": true
   },
   {
-    "id": "ā",
+    "id": "0",
     "name": "qamats",
     "char": "ָ",
     "sounds": ["a", "o"],
     "trans": ["ā", "o"],
-    "short": false
+    "short": null
   },
   {
     "id": "e",
