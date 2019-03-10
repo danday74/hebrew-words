@@ -16,12 +16,8 @@ const getSounds = (obj, encodedSyllables) => {
       const char = find(all, {id})
       if (char.name === 'sheva' && lastId) {
         // do nothing
-      } else if (char.name === 'qamats') {
-        if (vp !== 'CV') {
-          sounds.push(char.sounds)
-        } else {
-          sounds.push([char.sounds[0]])
-        }
+      } else if (char.name === 'qamats' && vp === 'CV') {
+        sounds.push([char.sounds[0]])
       } else {
         sounds.push(char.sounds)
       }
