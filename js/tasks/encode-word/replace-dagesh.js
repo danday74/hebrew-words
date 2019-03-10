@@ -4,7 +4,7 @@ const begadKepatChars = map(hebrewChars.begadKepat, 'char')
 const simpleVowelChars = map(hebrewChars.simpleVowels, 'char')
 const complexVowelChars = map(hebrewChars.complexVowels, 'char')
 const dagesh = hebrewChars.dagesh
-const utils = require('../../utils')
+const utils = require('../../utils/utils')
 
 const replaceDagesh = word => {
 

@@ -1,46 +1,39 @@
-const {find, reduce} = require('lodash')
-const hebrewChars = require('../../hebrew-chars')
-const all = hebrewChars.allIncComplexVowels
+const {reduce} = require('lodash')
+const shared = require('../../utils/shared')
 
 const encodeSyllables = encodedWord => {
 
-  // VP means vowel pattern
-
-  const ids = encodedWord.split('')
-  let VP = ids.map(id => {
-    const letter = find(all, {id})
-    return letter.type
-  }).join('')
+  let vp = shared.getVowelPattern(encodedWord)
 
   const syllableVPs = []
 
   let currentSyllableVP = ''
   let isDone = false
-  while (VP.length || !isDone) {
+  while (vp.length || !isDone) {
     if (!currentSyllableVP.length) {
       isDone = false
-      if (VP.endsWith('CV')) {
+      if (vp.endsWith('CV')) {
         currentSyllableVP = 'CV'
-        VP = VP.slice(0, -2)
-      } else if (VP.endsWith('CVC')) {
+        vp = vp.slice(0, -2)
+      } else if (vp.endsWith('CVC')) {
         currentSyllableVP = 'CVC'
-        VP = VP.slice(0, -3)
-      } /* istanbul ignore else */ else if (VP.endsWith('CVCN')) {
+        vp = vp.slice(0, -3)
+      } /* istanbul ignore else */ else if (vp.endsWith('CVCN')) {
         currentSyllableVP = 'CVCN'
-        VP = VP.slice(0, -4)
+        vp = vp.slice(0, -4)
       } else {
         throw Error('Unrecognised vowel pattern at stage one')
       }
     } else {
       isDone = true
-      const endVP = VP.slice(-3)
-      if (!VP.endsWith('N') || endVP.includes('V')) {
+      const endVP = vp.slice(-3)
+      if (!vp.endsWith('N') || endVP.includes('V')) {
         syllableVPs.unshift(currentSyllableVP)
         currentSyllableVP = ''
-      } /* istanbul ignore else */ else if (VP.endsWith('N') && VP.length === 2) {
-        currentSyllableVP = VP + currentSyllableVP
+      } /* istanbul ignore else */ else if (vp.endsWith('N') && vp.length === 2) {
+        currentSyllableVP = vp + currentSyllableVP
         syllableVPs.unshift(currentSyllableVP)
-        VP = ''
+        vp = ''
       } else {
         throw Error('Unrecognised vowel pattern at stage two')
       }
