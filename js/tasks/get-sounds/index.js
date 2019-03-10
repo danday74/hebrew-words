@@ -18,6 +18,8 @@ const getSounds = (obj, encodedSyllables) => {
 
   // then build the sounds
 
+  // exclude qamats qatan if syllable is open
+
   encodedSyllables.forEach((encodedSyllable, i) => {
     const lastSyllable = encodedSyllables.length === i + 1
     const ids = encodedSyllable.split('')
