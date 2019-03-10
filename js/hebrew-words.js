@@ -2,6 +2,7 @@ const checkForInvalidChars = require('./tasks/check-for-invalid-chars')
 const encodeWord = require('./tasks/encode-word')
 const getStress = require('./tasks/get-stress')
 const encodeSyllables = require('./tasks/encode-syllables')
+const adjustSyllablesForShevaAndQamats = require('./tasks/adjust-syllables')
 const getSyllables = require('./tasks/get-syllables')
 const getSounds = require('./tasks/get-sounds')
 const getTransliteration = require('./tasks/get-transliteration')
@@ -23,9 +24,12 @@ const hebrewWords = (word, stressOnPenultimateSyllable) => {
   if (!obj.ok) return obj
 
   const encodedWord = encodeWord(obj.word)
+
   getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
 
-  const encodedSyllables = encodeSyllables(encodedWord)
+  const syllables = encodeSyllables(encodedWord)
+  const encodedSyllables = adjustSyllablesForShevaAndQamats(syllables, obj.stress)
+
   getSyllables(obj, encodedSyllables)
   getSounds(obj, encodedSyllables)
   getTransliteration(obj, encodedSyllables)
