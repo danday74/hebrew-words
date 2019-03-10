@@ -3,9 +3,7 @@ const replaceDagesh = require('./replace-dagesh')
 const replaceComplexVowels = require('./replace-complex-vowels')
 const replaceTheRest = require('./replace-the-rest')
 
-const getWordId = obj => {
-  let word
-  word = obj.word
+const encodeWord = word => {
   word = replaceShinSinDots(word)
   word = replaceDagesh(word)
   word = replaceComplexVowels(word)
@@ -13,4 +11,4 @@ const getWordId = obj => {
   return word
 }
 
-module.exports = getWordId
+module.exports = encodeWord
