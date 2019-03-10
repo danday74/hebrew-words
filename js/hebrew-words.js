@@ -3,6 +3,7 @@ const encodeWord = require('./tasks/encode-word')
 const encodeSyllables = require('./tasks/encode-syllables')
 const getSyllables = require('./tasks/get-syllables')
 const getSounds = require('./tasks/get-sounds')
+const getTransliteration = require('./tasks/get-transliteration')
 
 const hebrewWords = word => {
 
@@ -15,6 +16,7 @@ const hebrewWords = word => {
   const encodedSyllables = encodeSyllables(encodedWord)
   getSyllables(obj, encodedSyllables)
   getSounds(obj, encodedSyllables)
+  getTransliteration(obj, encodedSyllables)
 
   return obj
 }
