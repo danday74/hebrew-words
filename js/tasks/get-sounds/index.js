@@ -3,6 +3,7 @@ const hebrewChars = require('../../hebrew-chars')
 const all = hebrewChars.allIncComplexVowels
 const shared = require('../../utils/shared')
 const utils = require('../../utils/utils')
+
 const getSounds = (obj, encodedSyllables) => {
 
   const sounds = []
