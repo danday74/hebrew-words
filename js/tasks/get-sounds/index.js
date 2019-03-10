@@ -6,6 +6,18 @@ const getSounds = (obj, encodedSyllables) => {
 
   let sound1 = ''
 
+  // build array first like this [1, 1, 1, 2, 1, 1, 3, 1]
+
+  // then from that build this:
+  // [1, 1, 1, 1, 1, 1, 1, 1]
+  // [1, 1, 1, 1, 1, 1, 2, 1]
+  // [1, 1, 1, 1, 1, 1, 3, 1]
+  // [1, 1, 1, 2, 1, 1, 1, 1]
+  // [1, 1, 1, 2, 1, 1, 2, 1]
+  // [1, 1, 1, 2, 1, 1, 3, 1]
+
+  // then build the sounds
+
   encodedSyllables.forEach((encodedSyllable, i) => {
     const lastSyllable = encodedSyllables.length === i + 1
     const ids = encodedSyllable.split('')
