@@ -11,7 +11,7 @@ const getSyllables = (obj, encodedSyllables) => {
     }).join('')
     return syllable
   })
-  // obj.syllables = syllables
+  obj.syllables = syllables
 }
 
 module.exports = getSyllables

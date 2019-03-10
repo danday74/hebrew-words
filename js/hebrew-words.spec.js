@@ -22,7 +22,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['שָׁ', 'לוֹם']
     }
     expect(actual).to.eql(expected)
   })
@@ -33,7 +34,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['אִשׁ', 'שָׁה']
     }
     expect(actual).to.eql(expected)
   })
@@ -44,7 +46,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['הִגּ', 'גִּיד']
     }
     expect(actual).to.eql(expected)
   })
@@ -55,7 +58,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['מִשְׁ', 'כָּן']
     }
     expect(actual).to.eql(expected)
   })
@@ -66,7 +70,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['מַלְ', 'אָךְ']
     }
     expect(actual).to.eql(expected)
   })
@@ -77,7 +82,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: true,
-      error: null
+      error: null,
+      syllables: ['נְחֹ', 'שֶׁת']
     }
     expect(actual).to.eql(expected)
   })
