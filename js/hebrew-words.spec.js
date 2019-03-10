@@ -24,7 +24,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['שָׁ', 'לוֹם'],
-      sounds: ['sha-lom']
+      sounds: ['sha-lom'],
+      transliterations: ['šālôm']
     }
     expect(actual).to.eql(expected)
   })
@@ -37,7 +38,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['אִשׁ', 'שָׁה'],
-      sounds: ['eesh-sha']
+      sounds: ['eesh-sha'],
+      transliterations: ['’iššāh']
     }
     expect(actual).to.eql(expected)
   })
@@ -50,7 +52,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['הִגּ', 'גִּיד'],
-      sounds: ['heeg-geed']
+      sounds: ['heeg-geed'],
+      transliterations: ['higgîḏ']
     }
     expect(actual).to.eql(expected)
   })
@@ -63,7 +66,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['מִשְׁ', 'כָּן'],
-      sounds: ['meesh-kan', 'meesh-kon']
+      sounds: ['meesh-kan', 'meesh-kon'],
+      transliterations: ['miškān', 'miškon']
     }
     expect(actual).to.eql(expected)
   })
@@ -76,7 +80,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['מַלְ', 'אָךְ'],
-      sounds: ['mal-ach', 'mal-och']
+      sounds: ['mal-ach', 'mal-och'],
+      transliterations: ['mal’āḵ', 'mal’oḵ']
     }
     expect(actual).to.eql(expected)
   })
@@ -89,7 +94,8 @@ describe('hebrew words', () => {
       ok: true,
       error: null,
       syllables: ['נְחֹ', 'שֶׁת'],
-      sounds: ['necho-shet']
+      sounds: ['necho-shet'],
+      transliterations: ['nəḥōšeṯ'] // TODO: THIS WORD HAS STRESS ON - nəḥṓšeṯ - BUT REMOVED FOR NOW, TEST IT WHEN SUPPORT ADDED FOR STRESS
     }
     expect(actual).to.eql(expected)
   })

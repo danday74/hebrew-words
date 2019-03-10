@@ -104,7 +104,7 @@
     "name": "chet",
     "char": "ח",
     "sounds": ["ch"],
-    "trans": ["ḥ"],
+    "trans": ["ḥ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
