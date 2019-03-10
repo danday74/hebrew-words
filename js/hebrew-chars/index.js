@@ -8,7 +8,7 @@ const dagesh = {
   name: 'dagesh',
   char: 'ּ',
   sounds: [''],
-  trans: null
+  trans: [null]
 }
 
 consonants = map(consonants, x => {

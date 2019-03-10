@@ -4,7 +4,7 @@
     "name": "qamats-heh",
     "char": "ָה",
     "sounds": ["a"],
-    "trans": "āh",
+    "trans": ["āh"],
     "short": false
   },
   {
@@ -12,7 +12,7 @@
     "name": "segol-heh",
     "char": "ֶה",
     "sounds": ["e"],
-    "trans": "eh",
+    "trans": ["eh"],
     "short": false
   },
   {
@@ -20,7 +20,7 @@
     "name": "segol-yod",
     "char": "ֶי",
     "sounds": ["e", "ey"],
-    "trans": "ê",
+    "trans": ["ê"],
     "short": false
   },
   {
@@ -28,7 +28,7 @@
     "name": "tsere-heh",
     "char": "ֵה",
     "sounds": ["e"],
-    "trans": "ēh",
+    "trans": ["ēh"],
     "short": false
   },
   {
@@ -36,7 +36,7 @@
     "name": "tsere-yod",
     "char": "ֵי",
     "sounds": ["e", "ey"],
-    "trans": "ê",
+    "trans": ["ê"],
     "short": false
   },
   {
@@ -44,7 +44,7 @@
     "name": "hiriq-yod",
     "char": "ִי",
     "sounds": ["ee"],
-    "trans": "î",
+    "trans": ["î"],
     "short": false
   },
   {
@@ -52,7 +52,7 @@
     "name": "holem-heh",
     "char": "ֹה",
     "sounds": ["o"],
-    "trans": "ōh",
+    "trans": ["ōh"],
     "short": false
   },
   {
@@ -60,7 +60,7 @@
     "name": "holem-vav",
     "char": "וֹ",
     "sounds": ["o"],
-    "trans": "ô",
+    "trans": ["ô"],
     "short": false
   },
   {
@@ -68,7 +68,7 @@
     "name": "shuruq",
     "char": "וּ",
     "sounds": ["oo"],
-    "trans": "û",
+    "trans": ["û"],
     "short": false
   }
 ]

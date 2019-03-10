@@ -14,6 +14,12 @@ charsWith2Sounds = filter(hebrewChars.allIncComplexVowels, x => x.sounds.length 
 charsWith2Sounds = map(charsWith2Sounds, 'name')
 console.log(charsWith2Sounds)
 
+console.log('chars with 2 transliterations')
+let charsWith2Transliterations
+charsWith2Transliterations = filter(hebrewChars.allIncComplexVowels, x => x.trans.length !== 1)
+charsWith2Transliterations = map(charsWith2Transliterations, 'name')
+console.log(charsWith2Transliterations)
+
 console.log('ensure IDs are unique')
 const ids = map(hebrewChars.allIncComplexVowels, 'id')
 const uniqueIds = uniq(ids)

@@ -4,7 +4,7 @@
     "name": "patah",
     "char": "ַ",
     "sounds": ["a"],
-    "trans": "a",
+    "trans": ["a"],
     "short": true
   },
   {
@@ -12,7 +12,7 @@
     "name": "qamats",
     "char": "ָ",
     "sounds": ["a", "o"],
-    "trans": "ā",
+    "trans": ["ā", "o"],
     "short": false
   },
   {
@@ -20,7 +20,7 @@
     "name": "segol",
     "char": "ֶ",
     "sounds": ["e"],
-    "trans": "e",
+    "trans": ["e"],
     "short": true
   },
   {
@@ -28,7 +28,7 @@
     "name": "tsere",
     "char": "ֵ",
     "sounds": ["e"],
-    "trans": "ē",
+    "trans": ["ē"],
     "short": false
   },
   {
@@ -36,7 +36,7 @@
     "name": "hiriq",
     "char": "ִ",
     "sounds": ["ee"],
-    "trans": "i",
+    "trans": ["i"],
     "short": true
   },
   {
@@ -44,7 +44,7 @@
     "name": "holem",
     "char": "ֹ",
     "sounds": ["o"],
-    "trans": "ō",
+    "trans": ["ō"],
     "short": false
   },
   {
@@ -52,7 +52,7 @@
     "name": "qubbuts",
     "char": "ֻ",
     "sounds": ["oo"],
-    "trans": "u",
+    "trans": ["u"],
     "short": true
   }
 ]

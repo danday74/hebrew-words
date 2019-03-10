@@ -4,7 +4,7 @@
     "name": "alef",
     "char": "א",
     "sounds": [""],
-    "trans": "’",
+    "trans": ["’"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -14,7 +14,7 @@
     "name": "bet",
     "char": "בּ",
     "sounds": ["b"],
-    "trans": "b",
+    "trans": ["b"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -24,7 +24,7 @@
     "name": "vet",
     "char": "ב",
     "sounds": ["v"],
-    "trans": "ḇ",
+    "trans": ["ḇ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -34,7 +34,7 @@
     "name": "gimel",
     "char": "גּ",
     "sounds": ["g"],
-    "trans": "g",
+    "trans": ["g"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -44,7 +44,7 @@
     "name": "gimel",
     "char": "ג",
     "sounds": ["g"],
-    "trans": "ǥ",
+    "trans": ["ǥ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -54,7 +54,7 @@
     "name": "dalet",
     "char": "דּ",
     "sounds": ["d"],
-    "trans": "d",
+    "trans": ["d"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -64,7 +64,7 @@
     "name": "dalet",
     "char": "ד",
     "sounds": ["d"],
-    "trans": "ḏ",
+    "trans": ["ḏ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -74,7 +74,7 @@
     "name": "heh",
     "char": "ה",
     "sounds": ["h"],
-    "trans": "h",
+    "trans": ["h"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": true
@@ -84,7 +84,7 @@
     "name": "vav",
     "char": "ו",
     "sounds": ["v"],
-    "trans": "w",
+    "trans": ["w"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": true
@@ -94,7 +94,7 @@
     "name": "zayin",
     "char": "ז",
     "sounds": ["z"],
-    "trans": "z",
+    "trans": ["z"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -104,7 +104,7 @@
     "name": "chet",
     "char": "ח",
     "sounds": ["ch"],
-    "trans": "ḥ",
+    "trans": ["ḥ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -114,7 +114,7 @@
     "name": "tet",
     "char": "ט",
     "sounds": ["t"],
-    "trans": "ṭ",
+    "trans": ["ṭ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -124,7 +124,7 @@
     "name": "yod",
     "char": "י",
     "sounds": ["y"],
-    "trans": "y",
+    "trans": ["y"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": true
@@ -134,7 +134,7 @@
     "name": "kaf",
     "char": "כּ",
     "sounds": ["k"],
-    "trans": "k",
+    "trans": ["k"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -144,7 +144,7 @@
     "name": "khaf",
     "char": "כ",
     "sounds": ["ch"],
-    "trans": "ḵ",
+    "trans": ["ḵ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -154,7 +154,7 @@
     "name": "kaf-final",
     "char": "ךּ",
     "sounds": ["k"],
-    "trans": "k",
+    "trans": ["k"],
     "final": true,
     "begadKepat": true,
     "canBeVowel": false
@@ -164,7 +164,7 @@
     "name": "khaf-final",
     "char": "ך",
     "sounds": ["ch"],
-    "trans": "ḵ",
+    "trans": ["ḵ"],
     "final": true,
     "begadKepat": false,
     "canBeVowel": false
@@ -174,7 +174,7 @@
     "name": "lamed",
     "char": "ל",
     "sounds": ["l"],
-    "trans": "l",
+    "trans": ["l"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -184,7 +184,7 @@
     "name": "mem",
     "char": "מ",
     "sounds": ["m"],
-    "trans": "m",
+    "trans": ["m"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -194,7 +194,7 @@
     "name": "mem-final",
     "char": "ם",
     "sounds": ["m"],
-    "trans": "m",
+    "trans": ["m"],
     "final": true,
     "begadKepat": false,
     "canBeVowel": false
@@ -204,7 +204,7 @@
     "name": "noon",
     "char": "נ",
     "sounds": ["n"],
-    "trans": "n",
+    "trans": ["n"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -214,7 +214,7 @@
     "name": "noon-final",
     "char": "ן",
     "sounds": ["n"],
-    "trans": "n",
+    "trans": ["n"],
     "final": true,
     "begadKepat": false,
     "canBeVowel": false
@@ -224,7 +224,7 @@
     "name": "samekh",
     "char": "ס",
     "sounds": ["s"],
-    "trans": "s",
+    "trans": ["s"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -234,7 +234,7 @@
     "name": "ayin",
     "char": "ע",
     "sounds": [""],
-    "trans": "‘",
+    "trans": ["‘"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -244,7 +244,7 @@
     "name": "peh",
     "char": "פּ",
     "sounds": ["p"],
-    "trans": "p",
+    "trans": ["p"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -254,7 +254,7 @@
     "name": "feh",
     "char": "פ",
     "sounds": ["f"],
-    "trans": "ꝑ",
+    "trans": ["ꝑ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -264,7 +264,7 @@
     "name": "peh-final",
     "char": "ףּ",
     "sounds": ["p"],
-    "trans": "p",
+    "trans": ["p"],
     "final": true,
     "begadKepat": true,
     "canBeVowel": false
@@ -274,7 +274,7 @@
     "name": "feh-final",
     "char": "ף",
     "sounds": ["f"],
-    "trans": "ꝑ",
+    "trans": ["ꝑ"],
     "final": true,
     "begadKepat": false,
     "canBeVowel": false
@@ -284,7 +284,7 @@
     "name": "tsadeh",
     "char": "צ",
     "sounds": ["ts"],
-    "trans": "ṣ",
+    "trans": ["ṣ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -294,7 +294,7 @@
     "name": "tsadeh-final",
     "char": "ץ",
     "sounds": ["ts"],
-    "trans": "ṣ",
+    "trans": ["ṣ"],
     "final": true,
     "begadKepat": false,
     "canBeVowel": false
@@ -304,7 +304,7 @@
     "name": "qof",
     "char": "ק",
     "sounds": ["k"],
-    "trans": "q",
+    "trans": ["q"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -314,7 +314,7 @@
     "name": "resh",
     "char": "ר",
     "sounds": ["r"],
-    "trans": "r",
+    "trans": ["r"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -324,7 +324,7 @@
     "name": "sin",
     "char": "שׂ",
     "sounds": ["s"],
-    "trans": "ś",
+    "trans": ["ś"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -334,7 +334,7 @@
     "name": "shin",
     "char": "שׁ",
     "sounds": ["sh"],
-    "trans": "š",
+    "trans": ["š"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false
@@ -344,7 +344,7 @@
     "name": "tav",
     "char": "תּ",
     "sounds": ["t"],
-    "trans": "t",
+    "trans": ["t"],
     "final": false,
     "begadKepat": true,
     "canBeVowel": false
@@ -354,7 +354,7 @@
     "name": "tav",
     "char": "ת",
     "sounds": ["t"],
-    "trans": "ṯ",
+    "trans": ["ṯ"],
     "final": false,
     "begadKepat": false,
     "canBeVowel": false

@@ -4,27 +4,27 @@
     "name": "sheva",
     "char": "ְ",
     "sounds": ["e"],
-    "trans": "ə"
+    "trans": ["ə"]
   },
   {
     "id": "ă",
     "name": "hataf-patah",
     "char": "ֲ",
     "sounds": ["a"],
-    "trans": "ă"
+    "trans": ["ă"]
   },
   {
     "id": "ŏ",
     "name": "hataf-qamats",
     "char": "ֳ",
     "sounds": ["o"],
-    "trans": "ŏ"
+    "trans": ["ŏ"]
   },
   {
     "id": "ĕ",
     "name": "hataf-segol",
     "char": "ֱ",
     "sounds": ["e"],
-    "trans": "ĕ"
+    "trans": ["ĕ"]
   }
 ]
