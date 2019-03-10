@@ -23,7 +23,8 @@ const plainQamats = {
   char: 'ָ',
   sounds: ['a'],
   trans: ['ā'],
-  short: false
+  short: false,
+  transAccent: ['́ā']
 }
 const qamatsQatan = {
   id: 'o',
@@ -31,7 +32,8 @@ const qamatsQatan = {
   char: 'ָ',
   sounds: ['o'],
   trans: ['o'],
-  short: true
+  short: true,
+  transAccent: ['ó']
 }
 
 consonants = map(consonants, x => {

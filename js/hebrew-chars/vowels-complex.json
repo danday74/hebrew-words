@@ -5,7 +5,8 @@
     "char": "ָה",
     "sounds": ["a"],
     "trans": ["āh"],
-    "short": false
+    "short": false,
+    "transAccent": ["́āh"]
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "char": "ֶה",
     "sounds": ["e"],
     "trans": ["eh"],
-    "short": false
+    "short": false,
+    "transAccent": ["éh"]
   },
   {
     "id": "3",
@@ -21,7 +23,8 @@
     "char": "ֶי",
     "sounds": ["e", "ey"],
     "trans": ["ê"],
-    "short": false
+    "short": false,
+    "transAccent": ["ế"]
   },
   {
     "id": "4",
@@ -29,7 +32,8 @@
     "char": "ֵה",
     "sounds": ["e"],
     "trans": ["ēh"],
-    "short": false
+    "short": false,
+    "transAccent": ["ḗh"]
   },
   {
     "id": "5",
@@ -37,7 +41,8 @@
     "char": "ֵי",
     "sounds": ["e", "ey"],
     "trans": ["ê"],
-    "short": false
+    "short": false,
+    "transAccent": ["ế"]
   },
   {
     "id": "6",
@@ -45,7 +50,8 @@
     "char": "ִי",
     "sounds": ["ee"],
     "trans": ["î"],
-    "short": false
+    "short": false,
+    "transAccent": ["́î"]
   },
   {
     "id": "7",
@@ -53,7 +59,8 @@
     "char": "ֹה",
     "sounds": ["o"],
     "trans": ["ōh"],
-    "short": false
+    "short": false,
+    "transAccent": ["ṓh"]
   },
   {
     "id": "8",
@@ -61,7 +68,8 @@
     "char": "וֹ",
     "sounds": ["o"],
     "trans": ["ô"],
-    "short": false
+    "short": false,
+    "transAccent": ["́ô"]
   },
   {
     "id": "9",
@@ -69,6 +77,7 @@
     "char": "וּ",
     "sounds": ["oo"],
     "trans": ["û"],
-    "short": false
+    "short": false,
+    "transAccent": ["́û"]
   }
 ]
