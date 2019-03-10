@@ -1,11 +1,16 @@
 const checkForInvalidChars = require('./tasks/check-for-invalid-chars')
-const getSyllables = require('./tasks/get-syllables')
+const getWordId = require('./tasks/get-word-id')
 
 const hebrewWords = word => {
+
   const obj = {word}
+
   checkForInvalidChars(obj)
   if (!obj.ok) return obj
-  getSyllables(obj)
+
+  const wordId = getWordId(obj)
+  console.log(wordId)
+
   return obj
 }
 

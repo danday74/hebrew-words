@@ -1,3 +1,14 @@
+const {find} = require('lodash')
+
+const replaceCharsWithIds = (word, array) => {
+  const chars = word.split('')
+  word = chars.map(char => {
+    const vowel = find(array, {char})
+    return vowel ? vowel.id : char
+  }).join('')
+  return word
+}
+
 const strReplaceAtPos = (str, idx, char) => {
   str = str.split('')
   str[idx] = char
@@ -15,6 +26,7 @@ const debugWord = (word, msg = null) => {
 }
 
 const utils = {
+  replaceCharsWithIds,
   strReplaceAtPos,
   debugWord
 }
