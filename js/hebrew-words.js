@@ -1,6 +1,7 @@
 const checkForInvalidChars = require('./tasks/check-for-invalid-chars')
 const encodeWord = require('./tasks/encode-word')
 const encodeSyllables = require('./tasks/encode-syllables')
+const getSyllables = require('./tasks/get-syllables')
 
 const hebrewWords = word => {
 
@@ -11,7 +12,7 @@ const hebrewWords = word => {
 
   const encodedWord = encodeWord(obj.word)
   const encodedSyllables = encodeSyllables(encodedWord)
-  console.log(encodedSyllables)
+  getSyllables(obj, encodedSyllables)
 
   return obj
 }
