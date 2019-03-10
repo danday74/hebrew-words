@@ -23,7 +23,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable) => {
   checkForInvalidChars(obj)
   if (!obj.ok) return obj
 
-  const encodedWord = encodeWord(obj.word)
+  const encodedWord = encodeWord(obj.word) // no sheva and qamats adjustments at this point
 
   getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
 
