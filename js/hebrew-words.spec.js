@@ -10,6 +10,11 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
+      notes: [],
+      stress: null,
+      syllables: [],
+      sounds: [],
+      transliterations: [],
       ok: false,
       error: 'Non Hebraic character - t - detected in word'
     }
@@ -21,11 +26,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['שָׁ', 'לוֹם'],
       sounds: ['sha-lom'],
-      transliterations: ['šālôm']
+      transliterations: ['šālôm'],
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
@@ -35,11 +42,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['אִשׁ', 'שָׁה'],
       sounds: ['eesh-sha'],
-      transliterations: ['’iššāh']
+      transliterations: ['’iššāh'],
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
@@ -49,11 +58,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['הִגּ', 'גִּיד'],
       sounds: ['heeg-geed'],
-      transliterations: ['higgîḏ']
+      transliterations: ['higgîḏ'],
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
@@ -63,11 +74,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['מִשְׁ', 'כָּן'],
       sounds: ['meesh-kan', 'meesh-kon'],
-      transliterations: ['miškān', 'miškon']
+      transliterations: ['miškān', 'miškon'],
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
@@ -77,11 +90,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['מַלְ', 'אָךְ'],
       sounds: ['mal-ach', 'mal-och'],
-      transliterations: ['mal’āḵ', 'mal’oḵ']
+      transliterations: ['mal’āḵ', 'mal’oḵ'],
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
@@ -91,11 +106,13 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      ok: true,
-      error: null,
+      notes: [],
+      stress: null,
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['necho-shet'],
-      transliterations: ['nəḥōšeṯ'] // TODO: THIS WORD HAS STRESS ON - nəḥṓšeṯ - BUT REMOVED FOR NOW, TEST IT WHEN SUPPORT ADDED FOR STRESS
+      transliterations: ['nəḥōšeṯ'], // TODO: THIS WORD HAS STRESS ON - nəḥṓšeṯ - BUT REMOVED FOR NOW, TEST IT WHEN SUPPORT ADDED FOR STRESS
+      ok: true,
+      error: null
     }
     expect(actual).to.eql(expected)
   })
