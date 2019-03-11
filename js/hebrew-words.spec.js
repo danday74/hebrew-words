@@ -117,7 +117,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('shena-yeem   two', () => {
+  it('shená-yeem   two', () => {
     const word = 'שְׁנַיִם'
     const actual = hebrewWords(word)
     const expected = {
@@ -125,7 +125,7 @@ describe('hebrew words', () => {
       notes: ['ends with ayim'],
       stress: 'penultimate',
       syllables: ['שְׁנַ', 'יִם'],
-      sounds: ['shena-yeem'],
+      sounds: ['shená-yeem'],
       transliterations: ['šənáyim'], // TODO: STRESS ISSUES
       ok: true,
       error: null

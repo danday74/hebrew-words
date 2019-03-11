@@ -7,11 +7,17 @@ const getTransliteration = (obj, encodedSyllables) => {
 
   const transliterations = []
 
-  encodedSyllables.forEach(encodedSyllable => {
+  encodedSyllables.forEach((encodedSyllable, i) => {
+    const penultimate = encodedSyllables.length === i + 2
     const ids = encodedSyllable.split('')
+
     ids.forEach(id => {
       const char = find(all, {id})
-      transliterations.push(char.trans)
+      if (penultimate && obj.stress === 'penultimate' && char.type === 'V') {
+        transliterations.push(char.transAccent)
+      } else {
+        transliterations.push(char.trans)
+      }
     })
   })
 

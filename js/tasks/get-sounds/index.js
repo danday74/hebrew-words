@@ -8,13 +8,19 @@ const getSounds = (obj, encodedSyllables) => {
   const sounds = []
 
   encodedSyllables.forEach((encodedSyllable, i) => {
-    const lastSyllable = encodedSyllables.length === i + 1
+    const penultimate = encodedSyllables.length === i + 2
+    const ultimate = encodedSyllables.length === i + 1
     const ids = encodedSyllable.split('')
+
     ids.forEach(id => {
       const char = find(all, {id})
-      sounds.push(char.sounds)
+      if (penultimate && obj.stress === 'penultimate' && char.type === 'V') {
+        sounds.push(char.soundsAccent)
+      } else {
+        sounds.push(char.sounds)
+      }
     })
-    if (!lastSyllable) sounds.push(['-'])
+    if (!ultimate) sounds.push(['-'])
   })
 
   const cp = utils.cartesianProduct(sounds)
