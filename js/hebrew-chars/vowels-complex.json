@@ -6,6 +6,7 @@
     "sounds": ["a"],
     "trans": ["āh"],
     "short": false,
+    "soundsAccent": ["á"],
     "transAccent": ["́āh"]
   },
   {
@@ -15,6 +16,7 @@
     "sounds": ["e"],
     "trans": ["eh"],
     "short": false,
+    "soundsAccent": ["é"],
     "transAccent": ["éh"]
   },
   {
@@ -24,6 +26,7 @@
     "sounds": ["e", "ey"],
     "trans": ["ê"],
     "short": false,
+    "soundsAccent": ["é", "éý"],
     "transAccent": ["ế"]
   },
   {
@@ -33,6 +36,7 @@
     "sounds": ["e"],
     "trans": ["ēh"],
     "short": false,
+    "soundsAccent": ["é"],
     "transAccent": ["ḗh"]
   },
   {
@@ -42,6 +46,7 @@
     "sounds": ["e", "ey"],
     "trans": ["ê"],
     "short": false,
+    "soundsAccent": ["é", "éý"],
     "transAccent": ["ế"]
   },
   {
@@ -51,6 +56,7 @@
     "sounds": ["ee"],
     "trans": ["î"],
     "short": false,
+    "soundsAccent": ["éé"],
     "transAccent": ["́î"]
   },
   {
@@ -60,6 +66,7 @@
     "sounds": ["o"],
     "trans": ["ōh"],
     "short": false,
+    "soundsAccent": ["ó"],
     "transAccent": ["ṓh"]
   },
   {
@@ -69,6 +76,7 @@
     "sounds": ["o"],
     "trans": ["ô"],
     "short": false,
+    "soundsAccent": ["ó"],
     "transAccent": ["́ô"]
   },
   {
@@ -78,6 +86,7 @@
     "sounds": ["oo"],
     "trans": ["û"],
     "short": false,
+    "soundsAccent": ["óó"],
     "transAccent": ["́û"]
   }
 ]

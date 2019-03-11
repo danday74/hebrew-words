@@ -24,6 +24,7 @@ const plainQamats = {
   sounds: ['a'],
   trans: ['ā'],
   short: false,
+  soundsAccent: ['á'],
   transAccent: ['́ā']
 }
 const qamatsQatan = {
@@ -33,6 +34,7 @@ const qamatsQatan = {
   sounds: ['o'],
   trans: ['o'],
   short: true,
+  soundsAccent: ['ó'],
   transAccent: ['ó']
 }
 
