@@ -7,34 +7,35 @@ const getSyllables = require('./tasks/get-syllables')
 const getSounds = require('./tasks/get-sounds')
 const getTransliteration = require('./tasks/get-transliteration')
 
-const hebrewWords = (word, stressOnPenultimateSyllable) => {
+const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
 
   const obj = {
     word,
     notes: [],
-    stress: null,
-    syllables: [],
-    sounds: [],
-    transliterations: [],
-    // ok: true,
+    ok: true,
     error: null
   }
 
-  checkForInvalidChars(obj)
-  if (!obj.ok) return obj
+  try {
 
-  const encodedWord = encodeWord(obj.word) // no sheva and qamats adjustments at this point
+    checkForInvalidChars(obj.word)
 
-  getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
+    const encodedWord = encodeWord(obj.word) // no sheva and qamats adjustments at this point
 
-  const syllables = encodeSyllables(encodedWord)
-  const encodedSyllables = adjustSyllablesForShevaAndQamats(syllables, obj.stress)
+    getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
 
-  getSyllables(obj, encodedSyllables)
-  getSounds(obj, encodedSyllables)
-  getTransliteration(obj, encodedSyllables)
+    const syllables = encodeSyllables(encodedWord)
+    const encodedSyllables = adjustSyllablesForShevaAndQamats(syllables, obj.stress)
 
-  return obj
+    getSyllables(obj, encodedSyllables)
+    getSounds(obj, encodedSyllables)
+    getTransliteration(obj, encodedSyllables)
+
+    return obj
+
+  } catch (error) {
+    return {word, ok: false, error: error.message}
+  }
 }
 
 module.exports = hebrewWords

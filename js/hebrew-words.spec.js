@@ -10,11 +10,6 @@ describe('hebrew words', () => {
     const actual = hebrewWords(word)
     const expected = {
       word,
-      notes: [],
-      stress: null,
-      syllables: [],
-      sounds: [],
-      transliterations: [],
       ok: false,
       error: 'Non Hebraic character - t - detected in word'
     }
