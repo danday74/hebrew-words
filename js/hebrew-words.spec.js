@@ -180,4 +180,20 @@ describe('hebrew words', () => {
     }
     expect(actual).to.eql(expected)
   })
+
+  it('ne-fesh      soul, person, living being', () => {
+    const word = 'נֶפֶשׁ'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      notes: ['segolette'],
+      stress: 'penultimate',
+      syllables: ['נֶ', 'פֶשׁ'],
+      sounds: ['né-fesh'],
+      transliterations: ['néꝑeš'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
 })
