@@ -101,7 +101,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('necho-shet   copper, bronze', () => {
+  it('necho-shet   copper, bronze   (wrong)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word)
     const expected = {
@@ -110,7 +110,23 @@ describe('hebrew words', () => {
       stress: null,
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['necho-shet'],
-      transliterations: ['nəḥōšeṯ'], // TODO: THIS WORD HAS STRESS ON - nəḥṓšeṯ - BUT REMOVED FOR NOW, TEST IT WHEN SUPPORT ADDED FOR STRESS
+      transliterations: ['nəḥōšeṯ'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('nechó-shet   copper, bronze', () => {
+    const word = 'נְחֹשֶׁת'
+    const actual = hebrewWords(word, true)
+    const expected = {
+      word,
+      notes: [],
+      stress: 'penultimate',
+      syllables: ['נְחֹ', 'שֶׁת'],
+      sounds: ['nechó-shet'],
+      transliterations: ['nəḥṓšeṯ'],
       ok: true,
       error: null
     }
@@ -126,7 +142,7 @@ describe('hebrew words', () => {
       stress: 'penultimate',
       syllables: ['שְׁנַ', 'יִם'],
       sounds: ['shená-yeem'],
-      transliterations: ['šənáyim'], // TODO: STRESS ISSUES
+      transliterations: ['šənáyim'],
       ok: true,
       error: null
     }
