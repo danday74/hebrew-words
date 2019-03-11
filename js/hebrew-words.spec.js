@@ -16,7 +16,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('sha-lom            completeness, soundness', () => {
+  it('sha-lom             completeness, soundness', () => {
     const word = 'שָׁלוֹם'
     const actual = hebrewWords(word)
     const expected = {
@@ -32,7 +32,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('eesh-sha           woman, wife', () => {
+  it('eesh-sha            woman, wife', () => {
     const word = 'אִשָּׁה'
     const actual = hebrewWords(word)
     const expected = {
@@ -48,7 +48,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('heeg-geed          he declared, he told', () => {
+  it('heeg-geed           he declared, he told', () => {
     const word = 'הִגִּיד'
     const actual = hebrewWords(word)
     const expected = {
@@ -64,7 +64,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('meesh-kan          dwelling place, tabernacle', () => {
+  it('meesh-kan           dwelling place, tabernacle', () => {
     const word = 'מִשְׁכָּן'
     const actual = hebrewWords(word)
     const expected = {
@@ -80,7 +80,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('mal-ach            messenger, angel', () => {
+  it('mal-ach             messenger, angel', () => {
     const word = 'מַלְאָךְ'
     const actual = hebrewWords(word)
     const expected = {
@@ -96,7 +96,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('nechó-shet         copper, bronze   (no stress info)', () => {
+  it('nechó-shet          copper, bronze   (no stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word)
     const expected = {
@@ -112,7 +112,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('nechó-shet         copper, bronze   (with stress info)', () => {
+  it('nechó-shet          copper, bronze   (with stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word, true)
     const expected = {
@@ -128,7 +128,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('shená-yeem         two', () => {
+  it('shená-yeem          two', () => {
     const word = 'שְׁנַיִם'
     const actual = hebrewWords(word)
     const expected = {
@@ -144,7 +144,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('choch-ma           wisdom   (no stress info)', () => {
+  it('choch-ma            wisdom   (no stress info)', () => {
     const word = 'חָכְמָה'
     const actual = hebrewWords(word)
     const expected = {
@@ -160,7 +160,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('choch-ma           wisdom   (with stress info)', () => {
+  it('choch-ma            wisdom   (with stress info)', () => {
     const word = 'חָכְמָה'
     const actual = hebrewWords(word, false)
     const expected = {
@@ -176,7 +176,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('né-fesh            soul, person, living being', () => {
+  it('né-fesh             soul, person, living being', () => {
     const word = 'נֶפֶשׁ'
     const actual = hebrewWords(word)
     const expected = {
