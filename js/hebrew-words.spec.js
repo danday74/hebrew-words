@@ -101,7 +101,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('necho-shet   copper, bronze   (wrong)', () => {
+  it('nechó-shet   copper, bronze   (no stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word)
     const expected = {
@@ -117,7 +117,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('nechó-shet   copper, bronze', () => {
+  it('nechó-shet   copper, bronze   (with stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word, true)
     const expected = {
@@ -143,6 +143,38 @@ describe('hebrew words', () => {
       syllables: ['שְׁנַ', 'יִם'],
       sounds: ['shená-yeem'],
       transliterations: ['šənáyim'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('choch-ma     wisdom   (no stress info)', () => {
+    const word = 'חָכְמָה'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      notes: [],
+      stress: null,
+      syllables: ['חָכְ', 'מָה'],
+      sounds: ['chach-ma', 'choch-ma'],
+      transliterations: ['ḥāḵmāh', 'ḥoḵmāh'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('choch-ma     wisdom   (with stress info)', () => {
+    const word = 'חָכְמָה'
+    const actual = hebrewWords(word, false)
+    const expected = {
+      word,
+      notes: [],
+      stress: 'ultimate',
+      syllables: ['חָכְ', 'מָה'],
+      sounds: ['choch-ma'],
+      transliterations: ['ḥoḵmāh'],
       ok: true,
       error: null
     }
