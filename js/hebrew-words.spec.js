@@ -176,7 +176,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('ne-fesh      soul, person, living being', () => {
+  it('né-fesh      soul, person, living being', () => {
     const word = 'נֶפֶשׁ'
     const actual = hebrewWords(word)
     const expected = {
