@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "For a Hebraic word, returns JSON identifying vowels, consonants, syllables, weak dagesh, etc",
   "author": "danday74",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "main": "index.js",
   "scripts": {
     "info": "node info",
