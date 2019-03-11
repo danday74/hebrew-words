@@ -25,3 +25,11 @@ const ids = map(hebrewChars.allIncComplexVowels, 'id')
 const uniqueIds = uniq(ids)
 assert.strictEqual(ids.length, uniqueIds.length)
 console.log('assertion passed, IDs are unique')
+
+console.log('ensure vowel - sounds and soundsAccent - and - trans and transAccent - are equal in length')
+const vowels = [...hebrewChars.simpleVowels, ...hebrewChars.complexVowels, hebrewChars.plainQamats, hebrewChars.qamatsQatan]
+vowels.forEach(vowel => {
+  assert.strictEqual(vowel.sounds.length, vowel.soundsAccent.length)
+  assert.strictEqual(vowel.trans.length, vowel.transAccent.length)
+})
+console.log('assertion passed, lengths are equal')
