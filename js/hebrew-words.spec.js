@@ -207,4 +207,20 @@ describe('hebrew words', () => {
     }
     expect(actual).to.eql(expected)
   })
+
+  it('chav-va             Eve', () => {
+    const word = 'חַוָּה'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      notes: [],
+      stress: null,
+      syllables: ['חַו', 'וָה'],
+      sounds: ['chav-va'],
+      transliterations: ['ḥawwāh'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
 })
