@@ -1,6 +1,6 @@
 {
   "name": "hebrew-words",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "For a Hebraic word, returns JSON identifying vowels, consonants, syllables, weak dagesh, etc",
   "author": "danday74",
   "license": "UNLICENSED",
