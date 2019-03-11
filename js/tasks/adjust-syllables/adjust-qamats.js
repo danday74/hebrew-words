@@ -16,6 +16,7 @@ const adjustQamats = (syllables, syllable, idx, stress) => {
   let accented = null
   if (stress === 'penultimate') accented = penultimate
   if (stress === 'ultimate') accented = ultimate
+  if (!penultimate && !ultimate) accented = false
 
   const ids = syllable.split('')
 

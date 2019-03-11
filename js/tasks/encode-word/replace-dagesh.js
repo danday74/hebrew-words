@@ -5,13 +5,14 @@ const simpleVowelChars = map(hebrewChars.simpleVowels, 'char')
 const complexVowelChars = map(hebrewChars.complexVowels, 'char')
 const dagesh = hebrewChars.dagesh
 const utils = require('../../utils/utils')
+const vav = find(hebrewChars.consonants, {name: 'vav'})
 
 const replaceDagesh = word => {
 
   for (let i = 0; i < word.length; i++) {
     const char = word[i]
     if (char === dagesh.char) {
-      const consonantChar = word[i - 1] + char
+      const consonantChar = word[i - 1] + dagesh.char
       const simpleVowel = word[i - 2]
       const isSimpleVowelPreceding = simpleVowelChars.includes(simpleVowel)
       const complexVowel = word[i - 3] + word[i - 2]
@@ -24,6 +25,8 @@ const replaceDagesh = word => {
           word = utils.strReplaceAtPos(word, i, consonant.id)
           word = utils.strReplaceAtPos(word, i - 1, consonant.id)
         }
+      } else if (consonantChar === vav.char + dagesh.char) {
+        if (isVowelPreceding) word = utils.strReplaceAtPos(word, i, word[i - 1])
       } else {
         word = utils.strReplaceAtPos(word, i, word[i - 1])
       }
