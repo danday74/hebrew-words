@@ -22,6 +22,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['שָׁ', 'לוֹם'],
       sounds: ['sha-lom'],
@@ -38,6 +39,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['אִשׁ', 'שָׁה'],
       sounds: ['eesh-sha'],
@@ -54,6 +56,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['הִגּ', 'גִּיד'],
       sounds: ['heeg-geed'],
@@ -70,6 +73,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['מִשְׁ', 'כָּן'],
       sounds: ['meesh-kan', 'meesh-kon'],
@@ -86,6 +90,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['מַלְ', 'אָךְ'],
       sounds: ['mal-ach', 'mal-och'],
@@ -102,6 +107,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['necho-shet'],
@@ -118,6 +124,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: 'penultimate',
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['nechó-shet'],
@@ -134,6 +141,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['ends with ayim'],
+      layers: [],
       stress: 'penultimate',
       syllables: ['שְׁנַ', 'יִם'],
       sounds: ['shená-yeem'],
@@ -150,6 +158,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['חָכְ', 'מָה'],
       sounds: ['chach-ma', 'choch-ma'],
@@ -166,6 +175,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: 'ultimate',
       syllables: ['חָכְ', 'מָה'],
       sounds: ['choch-ma'],
@@ -182,6 +192,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['segolette'],
+      layers: [],
       stress: 'penultimate',
       syllables: ['נֶ', 'פֶשׁ'],
       sounds: ['né-fesh'],
@@ -198,6 +209,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['ends with ayim'],
+      layers: [],
       stress: 'penultimate',
       syllables: ['יְרוּ', 'שָׁ', 'לַ', 'יִם'],
       sounds: ['yeroo-sha-lá-yeem'],
@@ -214,6 +226,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
+      layers: [],
       stress: null,
       syllables: ['חַו', 'וָה'],
       sounds: ['chav-va'],

@@ -6,12 +6,14 @@ const adjustSyllablesForShevaAndQamats = require('./tasks/adjust-syllables')
 const getSyllables = require('./tasks/get-syllables')
 const getSounds = require('./tasks/get-sounds')
 const getTransliteration = require('./tasks/get-transliteration')
+const getLayers = require('./tasks/get-layers')
 
 const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
 
   const obj = {
     word,
     notes: [],
+    layers: [],
     ok: true,
     error: null
   }
@@ -30,6 +32,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
     getSyllables(obj, encodedSyllables)
     getSounds(obj, encodedSyllables)
     getTransliteration(obj, encodedSyllables)
+    getLayers(obj, encodedSyllables)
 
     return obj
 

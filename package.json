@@ -12,6 +12,7 @@
     "build": "npm run info && npm test && npm run enforcer"
   },
   "dependencies": {
+    "jsdom": "^14.0.0",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
