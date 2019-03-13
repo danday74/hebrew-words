@@ -6,6 +6,7 @@ const all = hebrewChars.allIncComplexVowels
 const getSounds = (obj, encodedSyllables) => {
 
   const sounds = []
+  const unaccentedSounds = []
 
   encodedSyllables.forEach((encodedSyllable, i) => {
     const penultimate = encodedSyllables.length === i + 2
@@ -19,12 +20,21 @@ const getSounds = (obj, encodedSyllables) => {
       } else {
         sounds.push(char.sounds)
       }
+      unaccentedSounds.push(char.sounds)
     })
-    if (!ultimate) sounds.push(['-'])
+    if (!ultimate) {
+      sounds.push(['-'])
+      unaccentedSounds.push(['-'])
+    }
   })
 
-  const cp = utils.cartesianProduct(sounds)
+  let cp
+
+  cp = utils.cartesianProduct(sounds)
   obj.sounds = cp.map(sound => sound.join(''))
+
+  cp = utils.cartesianProduct(unaccentedSounds)
+  obj.unaccentedSounds = cp.map(unaccentedSound => unaccentedSound.join(''))
 }
 
 module.exports = getSounds

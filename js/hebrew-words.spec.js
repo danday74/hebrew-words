@@ -23,9 +23,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['שָׁ', 'לוֹם'],
       sounds: ['sha-lom'],
+      unaccentedSounds: ['sha-lom'],
       transliterations: ['šālôm'],
       ok: true,
       error: null
@@ -40,9 +45,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 3,
+        syllables: 2
+      },
       stress: null,
       syllables: ['אִשׁ', 'שָׁה'],
       sounds: ['eesh-sha'],
+      unaccentedSounds: ['eesh-sha'],
       transliterations: ['’iššāh'],
       ok: true,
       error: null
@@ -57,9 +67,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['הִגּ', 'גִּיד'],
       sounds: ['heeg-geed'],
+      unaccentedSounds: ['heeg-geed'],
       transliterations: ['higgîḏ'],
       ok: true,
       error: null
@@ -74,9 +89,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['מִשְׁ', 'כָּן'],
       sounds: ['meesh-kan', 'meesh-kon'],
+      unaccentedSounds: ['meesh-kan', 'meesh-kon'],
       transliterations: ['miškān', 'miškon'],
       ok: true,
       error: null
@@ -91,9 +111,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['מַלְ', 'אָךְ'],
       sounds: ['mal-ach', 'mal-och'],
+      unaccentedSounds: ['mal-ach', 'mal-och'],
       transliterations: ['mal’āḵ', 'mal’oḵ'],
       ok: true,
       error: null
@@ -108,9 +133,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['necho-shet'],
+      unaccentedSounds: ['necho-shet'],
       transliterations: ['nəḥōšeṯ'],
       ok: true,
       error: null
@@ -125,9 +155,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: 'penultimate',
       syllables: ['נְחֹ', 'שֶׁת'],
       sounds: ['nechó-shet'],
+      unaccentedSounds: ['necho-shet'],
       transliterations: ['nəḥṓšeṯ'],
       ok: true,
       error: null
@@ -142,9 +177,14 @@ describe('hebrew words', () => {
       word,
       notes: ['ends with ayim'],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: 'penultimate',
       syllables: ['שְׁנַ', 'יִם'],
       sounds: ['shená-yeem'],
+      unaccentedSounds: ['shena-yeem'],
       transliterations: ['šənáyim'],
       ok: true,
       error: null
@@ -159,9 +199,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: null,
       syllables: ['חָכְ', 'מָה'],
       sounds: ['chach-ma', 'choch-ma'],
+      unaccentedSounds: ['chach-ma', 'choch-ma'],
       transliterations: ['ḥāḵmāh', 'ḥoḵmāh'],
       ok: true,
       error: null
@@ -176,9 +221,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 4,
+        syllables: 2
+      },
       stress: 'ultimate',
       syllables: ['חָכְ', 'מָה'],
       sounds: ['choch-ma'],
+      unaccentedSounds: ['choch-ma'],
       transliterations: ['ḥoḵmāh'],
       ok: true,
       error: null
@@ -193,9 +243,14 @@ describe('hebrew words', () => {
       word,
       notes: ['segolette'],
       layers: [],
+      counts: {
+        consonants: 3,
+        syllables: 2
+      },
       stress: 'penultimate',
       syllables: ['נֶ', 'פֶשׁ'],
       sounds: ['né-fesh'],
+      unaccentedSounds: ['ne-fesh'],
       transliterations: ['néꝑeš'],
       ok: true,
       error: null
@@ -210,9 +265,14 @@ describe('hebrew words', () => {
       word,
       notes: ['ends with ayim'],
       layers: [],
+      counts: {
+        consonants: 7,
+        syllables: 4
+      },
       stress: 'penultimate',
       syllables: ['יְרוּ', 'שָׁ', 'לַ', 'יִם'],
       sounds: ['yeroo-sha-lá-yeem'],
+      unaccentedSounds: ['yeroo-sha-la-yeem'],
       transliterations: ['yərûšāláyim'],
       ok: true,
       error: null
@@ -227,9 +287,14 @@ describe('hebrew words', () => {
       word,
       notes: [],
       layers: [],
+      counts: {
+        consonants: 3,
+        syllables: 2
+      },
       stress: null,
       syllables: ['חַו', 'וָה'],
       sounds: ['chav-va'],
+      unaccentedSounds: ['chav-va'],
       transliterations: ['ḥawwāh'],
       ok: true,
       error: null

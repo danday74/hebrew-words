@@ -4,6 +4,7 @@ const getStress = require('./tasks/get-stress')
 const encodeSyllables = require('./tasks/encode-syllables')
 const adjustSyllablesForShevaAndQamats = require('./tasks/adjust-syllables')
 const getSyllables = require('./tasks/get-syllables')
+const getCounts = require('./tasks/get-counts')
 const getSounds = require('./tasks/get-sounds')
 const getTransliteration = require('./tasks/get-transliteration')
 const getLayers = require('./tasks/get-layers')
@@ -22,7 +23,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
 
     checkForInvalidChars(obj.word)
 
-    const encodedWord = encodeWord(obj.word) // no sheva and qamats adjustments at this point
+    const encodedWord = encodeWord(obj.word) // encodedWord has no sheva and qamats adjustments
 
     getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
 
@@ -30,6 +31,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
     const encodedSyllables = adjustSyllablesForShevaAndQamats(syllables, obj.stress)
 
     getSyllables(obj, encodedSyllables)
+    getCounts(obj, encodedWord)
     getSounds(obj, encodedSyllables)
     getTransliteration(obj, encodedSyllables)
     getLayers(obj, encodedSyllables)

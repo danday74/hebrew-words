@@ -1,3 +1,4 @@
+const beautifyHtml = require('js-beautify').html
 const {find} = require('lodash')
 const hebrewChars = require('../hebrew-chars')
 const all = hebrewChars.allIncComplexVowels
@@ -20,9 +21,15 @@ const getVowelPattern = encoded => {
   return vp
 }
 
+const logPrettyHtml = strHtml => {
+  const prettyHtml = beautifyHtml(strHtml, {indent_size: 2, inline: []})
+  console.log(prettyHtml)
+}
+
 const shared = {
   replaceCharsWithIds,
-  getVowelPattern
+  getVowelPattern,
+  logPrettyHtml
 }
 
 module.exports = shared

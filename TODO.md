@@ -37,27 +37,31 @@ layers:
 
 A LAYER LOOKS LIKE THIS:
 
-<span class="layer-data dagesh-layer">  !!!THE LAYER DATA CHANGES BETWEEN LAYERS!!!
-  <span class="general-data syllable-1">
-    <span class="consonant-data consonant-as-vowel begad-kepat shin">
-      <span class="shin-and-sin-data"> MIGHT NOT NEED THIS - JUST ON AND OFF
-        <span class="dagesh-data strong">
-          <span class="vowel-data qamats-qatan">
-		    STUFF  !!!THE STUFF CHANGES BETWEEN LAYERS!!!
+<span class="layer-chunk dagesh-layer">  !!!THE LAYER DATA CHANGES BETWEEN LAYERS!!!
+  <span class="letter-chunk syllable-1 letter-1">
+    <span class="consonant-chunk consonant-as-vowel begad-kepat shin">
+      <span class="shin-and-sin-chunk"> MIGHT NOT NEED THIS - JUST ON AND OFF
+        <span class="dagesh-chunk strong">
+          <span class="vowel-chunk qamats-qatan">
+            <span class="content-chunk">
+		          STUFF  !!!THE STUFF CHANGES BETWEEN LAYERS!!!
+            </span>
           </span>
         </span>
       </span>
     </span>
   </span>
-  <span class="general-data syllable-2">
-    <span class="consonant-data consonant-as-vowel begad-kepat shin">
-      <span class="shin-and-sin-data"> MIGHT NOT NEED THIS - JUST ON AND OFF
-        <span class="dagesh-data strong">
-          <span class="vowel-data qamats-qatan">
-		    STUFF
+  <span class="letter-chunk syllable-1 letter-2">
+    <span class="consonant-chunk consonant-as-vowel begad-kepat shin">
+      <span class="shin-and-sin-chunk"> MIGHT NOT NEED THIS - JUST ON AND OFF
+        <span class="dagesh-chunk strong">
+          <span class="vowel-chunk qamats-qatan">
+            <span class="content-chunk">
+		          STUFF  !!!THE STUFF CHANGES BETWEEN LAYERS!!!
+            </span>
           </span>
         </span>
       </span>
     </span>
-  </span>  
+  </span>
 </span>
