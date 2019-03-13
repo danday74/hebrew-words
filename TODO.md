@@ -14,14 +14,13 @@ layers:
   consonants only * 2:
   
     css class for syllable - e.g. syllable-1 syllable-2
-	css class for doubles - e.g. syllable-1-2 (gradient on doubles)
-	css class for consonants that are vowels e.g. consonant-as-vowel
-	css class for begad-kepat
-	css class for strong / weak dagesh
-	name - e.g. heh qamats-heh heh-in-qamats-heh
-	css class for qamats qatan
-	css class for silent / moving sheva
-
+	  css class for doubles - e.g. syllable-1-2 (gradient on doubles)
+	  css class for consonants that are vowels e.g. consonant-as-vowel
+	  css class for begad-kepat
+	  css class for strong / weak dagesh
+	  name - e.g. heh qamats-heh heh-in-qamats-heh
+	  css class for qamats qatan
+	  css class for silent / moving sheva
 
   shin and sin dots:
   
