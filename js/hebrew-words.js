@@ -14,7 +14,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
   const obj = {
     word,
     notes: [],
-    layers: [],
+    layers: {},
     ok: true,
     error: null
   }

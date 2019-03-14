@@ -22,7 +22,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -45,7 +45,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 3,
         syllables: 2,
@@ -68,7 +68,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -91,7 +91,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -114,7 +114,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -137,7 +137,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -160,7 +160,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -183,7 +183,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['ends with ayim'],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -206,7 +206,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -229,7 +229,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 4,
         syllables: 2,
@@ -252,7 +252,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['segolette'],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 3,
         syllables: 2,
@@ -275,7 +275,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: ['ends with ayim'],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 7,
         syllables: 4,
@@ -298,7 +298,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 3,
         syllables: 2,
@@ -321,7 +321,7 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: [],
+      layers: {},
       counts: {
         consonants: 3,
         syllables: 2,
