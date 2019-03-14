@@ -21,6 +21,7 @@ const getVowelPattern = encoded => {
   return vp
 }
 
+/* istanbul ignore next */
 const logPrettyHtml = strHtml => {
   const prettyHtml = beautifyHtml(strHtml, {indent_size: 2, inline: []})
   console.log(prettyHtml)
