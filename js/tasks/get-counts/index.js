@@ -16,7 +16,8 @@ const getCounts = (obj, encodedWord) => {
 
   obj.counts = {
     consonants: consonantCount,
-    syllables: obj.syllables.length
+    syllables: obj.syllables.length,
+    chars: obj.word.length
   }
 }
 

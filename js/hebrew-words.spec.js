@@ -25,7 +25,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 7
       },
       stress: null,
       syllables: ['שָׁ', 'לוֹם'],
@@ -47,7 +48,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 3,
-        syllables: 2
+        syllables: 2,
+        chars: 7
       },
       stress: null,
       syllables: ['אִשׁ', 'שָׁה'],
@@ -69,7 +71,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 7
       },
       stress: null,
       syllables: ['הִגּ', 'גִּיד'],
@@ -91,7 +94,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 9
       },
       stress: null,
       syllables: ['מִשְׁ', 'כָּן'],
@@ -113,7 +117,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 8
       },
       stress: null,
       syllables: ['מַלְ', 'אָךְ'],
@@ -135,7 +140,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 8
       },
       stress: null,
       syllables: ['נְחֹ', 'שֶׁת'],
@@ -157,7 +163,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 8
       },
       stress: 'penultimate',
       syllables: ['נְחֹ', 'שֶׁת'],
@@ -179,7 +186,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 8
       },
       stress: 'penultimate',
       syllables: ['שְׁנַ', 'יִם'],
@@ -201,7 +209,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 7
       },
       stress: null,
       syllables: ['חָכְ', 'מָה'],
@@ -223,7 +232,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 4,
-        syllables: 2
+        syllables: 2,
+        chars: 7
       },
       stress: 'ultimate',
       syllables: ['חָכְ', 'מָה'],
@@ -245,7 +255,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 3,
-        syllables: 2
+        syllables: 2,
+        chars: 6
       },
       stress: 'penultimate',
       syllables: ['נֶ', 'פֶשׁ'],
@@ -267,7 +278,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 7,
-        syllables: 4
+        syllables: 4,
+        chars: 13
       },
       stress: 'penultimate',
       syllables: ['יְרוּ', 'שָׁ', 'לַ', 'יִם'],
@@ -289,7 +301,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 3,
-        syllables: 2
+        syllables: 2,
+        chars: 6
       },
       stress: null,
       syllables: ['חַו', 'וָה'],
@@ -311,7 +324,8 @@ describe('hebrew words', () => {
       layers: [],
       counts: {
         consonants: 3,
-        syllables: 2
+        syllables: 2,
+        chars: 6
       },
       stress: null,
       syllables: ['נָ', 'שָׂא'],
