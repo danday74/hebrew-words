@@ -64,3 +64,5 @@ A LAYER LOOKS LIKE THIS:
     </span>
   </span>
 </span>
+
+TODO: Write first layer - consonants only - think about how best to do it
