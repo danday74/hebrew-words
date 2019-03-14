@@ -5,6 +5,7 @@ const all = hebrewChars.allIncComplexVowels
 
 // When the counter is incremented for a consonant we need to check the chunk exists
 const checkChunk = (chunk, type) => {
+  /* istanbul ignore if */
   if (chunk.length !== 1) throw Error(`Cannot find the chunk (for a ${type})`)
   return chunk
 }
@@ -18,6 +19,7 @@ const syllableClassesForDoubles = (chunk, class1, class2) => {
     const indexOfClass2 = classes.indexOf(' ' + class2)
     chunk.removeClass(class1).removeClass(class2)
     if (indexOfClass1 < indexOfClass2) chunk.addClass(class12)
+    /* istanbul ignore else */
     else if (indexOfClass1 > indexOfClass2) chunk.addClass(class21)
     else throw Error('Could not determine syllable classes for doubles')
   }
@@ -89,6 +91,7 @@ const populateLayer = ($, syllables, stress) => {
         }
 
         // shuruq and holem-vav
+        /* istanbul ignore else */
         else if (char.name === 'shuruq' || char.name === 'holem-vav') {
 
           j++

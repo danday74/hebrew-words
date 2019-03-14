@@ -301,4 +301,26 @@ describe('hebrew words', () => {
     }
     expect(actual).to.eql(expected)
   })
+
+  it('na-sa             he lifted, he carried', () => {
+    const word = 'נָשָׂא'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      notes: [],
+      layers: [],
+      counts: {
+        consonants: 3,
+        syllables: 2
+      },
+      stress: null,
+      syllables: ['נָ', 'שָׂא'],
+      sounds: ['na-sa', 'na-so'],
+      unaccentedSounds: ['na-sa', 'na-so'],
+      transliterations: ['nāśā’', 'nāśo’'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
 })
