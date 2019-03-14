@@ -8,15 +8,16 @@ const blankLayer = (consonantCount, unaccentedSounds) => {
   const $ = cheerio.load('<span class="layer-chunk"></span>')
 
   const layerChunk = $('.layer-chunk')
+  const sep = ' OOOOOOOOOO'
 
   indices.forEach(i => {
     layerChunk.append(
-      `<span class="letter-chunk letter-${i + 1}">` +
-      '<span class="consonant-chunk">' +
-      '<span class="shin-and-sin-chunk">' +
-      '<span class="dagesh-chunk">' +
-      '<span class="vowel-chunk">' +
-      '<span class="content-chunk">' +
+      `<span class="letter-chunk letter-${i + 1}${sep}">` +
+      `<span class="consonant-chunk${sep}">` +
+      `<span class="shin-and-sin-chunk${sep}">` +
+      `<span class="dagesh-chunk${sep}">` +
+      `<span class="vowel-chunk${sep}">` +
+      `<span class="content-chunk${sep}">` +
       '</span></span></span></span></span></span>'
     )
   })

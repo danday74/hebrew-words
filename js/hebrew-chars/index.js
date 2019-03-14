@@ -8,14 +8,20 @@ const dagesh = {
   name: 'dagesh',
   char: 'ּ',
   sounds: [''],
-  trans: [null]
+  trans: [null],
+  type: null,
+  subType: null,
+  typeName: null
 }
 const silentSheva = {
   id: 'ɇ',
   name: 'silent-sheva',
   char: 'ְ',
   sounds: [''],
-  trans: ['']
+  trans: [''],
+  type: 'N',
+  subType: 'N',
+  typeName: 'non-vowel'
 }
 const plainQamats = {
   id: 'ā',
@@ -25,7 +31,10 @@ const plainQamats = {
   trans: ['ā'],
   short: false,
   soundsAccent: ['á'],
-  transAccent: ['́ā']
+  transAccent: ['́ā'],
+  type: 'V',
+  subType: 'S',
+  typeName: 'simple-vowel'
 }
 const qamatsQatan = {
   id: 'o',
@@ -35,26 +44,37 @@ const qamatsQatan = {
   trans: ['o'],
   short: true,
   soundsAccent: ['ó'],
-  transAccent: ['ó']
+  transAccent: ['ó'],
+  type: 'V',
+  subType: 'S',
+  typeName: 'simple-vowel'
 }
 
 consonants = map(consonants, x => {
   x.type = 'C'
+  x.subType = 'C'
+  x.typeName = 'consonant'
   return x
 })
 
 simpleVowels = map(simpleVowels, x => {
   x.type = 'V'
+  x.subType = 'S'
+  x.typeName = 'simple-vowel'
   return x
 })
 
 complexVowels = map(complexVowels, x => {
   x.type = 'V'
+  x.subType = 'C'
+  x.typeName = 'complex-vowel'
   return x
 })
 
 nonVowels = map(nonVowels, x => {
   x.type = 'N'
+  x.subType = 'N'
+  x.typeName = 'non-vowel'
   return x
 })
 

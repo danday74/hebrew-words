@@ -1,8 +1,11 @@
 const blankLayer = require('./blank-layer')
+const populateLayer = require('./populate-layer')
 const shared = require('../../utils/shared')
 
 const getLayers = (obj, encodedSyllables) => {
-  const $ = blankLayer(obj.counts.consonants, obj.unaccentedSounds)
+  let $
+  $ = blankLayer(obj.counts.consonants, obj.unaccentedSounds)
+  $ = populateLayer($, encodedSyllables)
   const strHtml = $('body').html()
   shared.logPrettyHtml(strHtml)
 }
