@@ -26,10 +26,27 @@ const logPrettyHtml = strHtml => {
   console.log(prettyHtml)
 }
 
+const getStressObj = (syllables, idx, stress) => {
+  const penultimate = syllables.length === idx + 2
+  const ultimate = syllables.length === idx + 1
+  let accented = null
+  if (stress === 'penultimate') accented = penultimate
+  if (stress === 'ultimate') accented = ultimate
+  if (!penultimate && !ultimate) accented = false
+  return {penultimate, ultimate, accented}
+}
+
+const isSyllableOpen = syllable => {
+  const vp = getVowelPattern(syllable)
+  return vp === 'CV'
+}
+
 const shared = {
   replaceCharsWithIds,
   getVowelPattern,
-  logPrettyHtml
+  logPrettyHtml,
+  getStressObj,
+  isSyllableOpen
 }
 
 module.exports = shared

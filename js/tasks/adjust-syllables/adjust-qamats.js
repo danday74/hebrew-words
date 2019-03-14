@@ -9,23 +9,17 @@ const qamatsQatan = hebrewChars.qamatsQatan
 
 const adjustQamats = (syllables, syllable, idx, stress) => {
 
-  const vp = shared.getVowelPattern(syllable)
-  const open = vp === 'CV'
-  const penultimate = syllables.length === idx + 2
-  const ultimate = syllables.length === idx + 1
-  let accented = null
-  if (stress === 'penultimate') accented = penultimate
-  if (stress === 'ultimate') accented = ultimate
-  if (!penultimate && !ultimate) accented = false
+  const open = shared.isSyllableOpen(syllable)
+  const stressObj = shared.getStressObj(syllables, idx, stress)
 
   const ids = syllable.split('')
 
   ids.forEach((id, i) => {
     if (id === qamats.id) {
-      if (accented === false && !open) {
+      if (stressObj.accented === false && !open) {
         syllable = utils.strReplaceAtPos(syllable, i, qamatsQatan.id)
       }
-      if (accented === true || open) {
+      if (stressObj.accented === true || open) {
         syllable = utils.strReplaceAtPos(syllable, i, plainQamats.id)
       }
     }

@@ -5,7 +5,7 @@ const shared = require('../../utils/shared')
 const getLayers = (obj, encodedSyllables) => {
   let $
   $ = blankLayer(obj.counts.consonants, obj.unaccentedSounds)
-  $ = populateLayer($, encodedSyllables)
+  $ = populateLayer($, encodedSyllables, obj.stress)
   const strHtml = $('body').html()
   shared.logPrettyHtml(strHtml)
 }
