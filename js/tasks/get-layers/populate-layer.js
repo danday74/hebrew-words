@@ -1,4 +1,5 @@
 const {find} = require('lodash')
+const shared = require('../../utils/shared')
 const hebrewChars = require('../../hebrew-chars')
 const all = hebrewChars.allIncComplexVowels
 
@@ -8,15 +9,29 @@ const checkChunk = (chunk, type) => {
   return chunk
 }
 
-const populateLayer = ($, encodedSyllables) => {
+const syllableClassesForDoubles = (chunk, class1, class2) => {
+  const class12 = `${class1}-${class2}`
+  const class21 = `${class2}-${class1}`
+  if (chunk.hasClass(class1) && chunk.hasClass(class2) && !chunk.hasClass(class12) && !chunk.hasClass(class21)) {
+    const classes = chunk.attr('class')
+    const indexOfClass1 = classes.indexOf(' ' + class1)
+    const indexOfClass2 = classes.indexOf(' ' + class2)
+    chunk.removeClass(class1).removeClass(class2)
+    if (indexOfClass1 < indexOfClass2) chunk.addClass(class12)
+    else if (indexOfClass1 > indexOfClass2) chunk.addClass(class21)
+    else throw Error('Could not determine syllable classes for doubles')
+  }
+}
+
+const populateLayer = ($, syllables, stress) => {
 
   let prevChar
   let j = 0
 
-  encodedSyllables.forEach((syllable, i) => {
+  syllables.forEach((syllable, i) => {
 
-    const penultimate = encodedSyllables.length === i + 2
-    const ultimate = encodedSyllables.length === i + 1
+    const open = shared.isSyllableOpen(syllable)
+    const stressObj = shared.getStressObj(syllables, i, stress)
 
     const chars = syllable.split('')
     chars.forEach(x => {
@@ -88,14 +103,28 @@ const populateLayer = ($, encodedSyllables) => {
       }
 
       // syllables
-      chunks.letter(j).addClass(`syllable-${i + 1}`)
-      chunks.letter(j).addClass(`syllable-${i % 2 === 1 ? 'even' : 'odd'}`)
-      if (penultimate) chunks.letter(j).addClass('penultimate')
-      if (ultimate) chunks.letter(j).addClass('ultimate')
-      if (chunks.letter(j).hasClass(`syllable-${i}`)) {
-        chunks.letter(j).removeClass('syllable-even').removeClass('syllable-odd')
-        chunks.letter(j).addClass(`syllable-${i % 2 === 1 ? 'odd-even' : 'even-odd'}`)
-      }
+      const chunk = chunks.letter(j)
+      chunk.addClass(`syllable-${i + 1}`)
+
+      // even or odd
+      if (i % 2 === 1) chunk.addClass('even')
+      if (i % 2 === 0) chunk.addClass('odd')
+      syllableClassesForDoubles(chunk, 'even', 'odd')
+
+      // open or closed
+      if (open) chunk.addClass('open')
+      if (!open) chunk.addClass('closed')
+      syllableClassesForDoubles(chunk, 'open', 'closed')
+
+      // penultimate or ultimate
+      if (stressObj.penultimate) chunk.addClass('penultimate')
+      if (stressObj.ultimate) chunk.addClass('ultimate')
+      syllableClassesForDoubles(chunk, 'penultimate', 'ultimate')
+
+      // accented or unaccented
+      if (stressObj.accented === true) chunk.addClass('accented')
+      if (stressObj.accented === false) chunk.addClass('unaccented')
+      syllableClassesForDoubles(chunk, 'accented', 'unaccented')
 
       prevChar = char
     })
