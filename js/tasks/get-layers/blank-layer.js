@@ -1,5 +1,6 @@
 const {range} = require('lodash')
 const cheerio = require('cheerio')
+const config = require('../../../config')
 
 const blankLayer = (consonantCount, unaccentedSounds) => {
 
@@ -8,7 +9,7 @@ const blankLayer = (consonantCount, unaccentedSounds) => {
   const $ = cheerio.load('<span class="layer-chunk"></span>')
 
   const layerChunk = $('.layer-chunk')
-  const sep = ' OOOOOOOOOO'
+  const sep = config.sep
 
   indices.forEach(i => {
     layerChunk.append(
