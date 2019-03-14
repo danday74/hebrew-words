@@ -50,7 +50,11 @@ const populateLayer = ($, syllables, stress) => {
 
       if (isDouble) {
         chunks.consonant(j).addClass('double')
+
         chunks.dagesh(j).addClass('dagesh').addClass('strong')
+        /* istanbul ignore if */
+        if (chunks.dagesh(j).hasClass('weak')) throw Error('Dagesh cannot be weak and strong')
+
       } else {
 
         // consonants
