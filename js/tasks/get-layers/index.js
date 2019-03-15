@@ -3,11 +3,11 @@ const blankLayer = require('./blank-layer')
 const populateLayer = require('./populate-layer')
 const populateConsonantLayer = require('./populate-consonant-layer')
 const getConsonantLayer = require('./get-consonant-layer')
+const config = require('../../../config')
 // const shared = require('../../utils/shared')
 
 const clone = $ => {
-  const strHtml = $('body').html()
-  return cheerio.load(strHtml)
+  return cheerio.load($.html(), config.cheerioOptions)
 }
 
 const getLayers = (obj, encodedSyllables) => {
