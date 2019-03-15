@@ -1,7 +1,7 @@
 const chai = require('chai')
 const expect = chai.expect
-
 const hebrewWords = require('./hebrew-words')
+const testLayers = require('./test-layers')
 
 describe('hebrew words', () => {
 
@@ -22,7 +22,9 @@ describe('hebrew words', () => {
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: testLayers.consonant.shalom
+      },
       counts: {
         consonants: 4,
         syllables: 2,
