@@ -6,6 +6,8 @@
     "sounds": ["a"],
     "trans": ["āh"],
     "short": false,
+    "firstChar": "qamats",
+    "secondChar": "heh",
     "soundsAccent": ["á"],
     "transAccent": ["́āh"]
   },
@@ -16,6 +18,8 @@
     "sounds": ["e"],
     "trans": ["eh"],
     "short": false,
+    "firstChar": "segol",
+    "secondChar": "heh",
     "soundsAccent": ["é"],
     "transAccent": ["éh"]
   },
@@ -26,6 +30,8 @@
     "sounds": ["e", "ey"],
     "trans": ["ê"],
     "short": false,
+    "firstChar": "segol",
+    "secondChar": "yod",
     "soundsAccent": ["é", "éý"],
     "transAccent": ["ế"]
   },
@@ -36,6 +42,8 @@
     "sounds": ["e"],
     "trans": ["ēh"],
     "short": false,
+    "firstChar": "tsere",
+    "secondChar": "heh",
     "soundsAccent": ["é"],
     "transAccent": ["ḗh"]
   },
@@ -46,6 +54,8 @@
     "sounds": ["e", "ey"],
     "trans": ["ê"],
     "short": false,
+    "firstChar": "tsere",
+    "secondChar": "yod",
     "soundsAccent": ["é", "éý"],
     "transAccent": ["ế"]
   },
@@ -56,6 +66,8 @@
     "sounds": ["ee"],
     "trans": ["î"],
     "short": false,
+    "firstChar": "hiriq",
+    "secondChar": "yod",
     "soundsAccent": ["éé"],
     "transAccent": ["́î"]
   },
@@ -66,6 +78,8 @@
     "sounds": ["o"],
     "trans": ["ōh"],
     "short": false,
+    "firstChar": "holem",
+    "secondChar": "heh",
     "soundsAccent": ["ó"],
     "transAccent": ["ṓh"]
   },
@@ -76,6 +90,8 @@
     "sounds": ["o"],
     "trans": ["ô"],
     "short": false,
+    "firstChar": "vav",
+    "secondChar": "holem",
     "soundsAccent": ["ó"],
     "transAccent": ["́ô"]
   },
@@ -86,6 +102,8 @@
     "sounds": ["oo"],
     "trans": ["û"],
     "short": false,
+    "firstChar": "vav",
+    "secondChar": "dagesh",
     "soundsAccent": ["óó"],
     "transAccent": ["́û"]
   }

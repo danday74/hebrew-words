@@ -76,7 +76,7 @@ const populateLayer = ($, syllables, stress) => {
 
         // simple vowels
         else if (char.type === 'V' && char.subType === 'S') {
-          chunks.vowel(j).addClass(char.name).addClass(char.typeName)
+          chunks.vowel(j).addClass(char.name).addClass(char.typeName).addClass(char.short ? 'short' : 'long')
         }
 
         // non vowels
@@ -87,11 +87,11 @@ const populateLayer = ($, syllables, stress) => {
         // complex vowels exc shuruq and holem-vav
         else if (char.type === 'V' && char.subType === 'C' && char.name !== 'shuruq' && char.name !== 'holem-vav') {
 
-          chunks.vowel(j).addClass(char.name).addClass(char.typeName)
+          chunks.vowel(j).addClass(char.firstChar).addClass(char.name).addClass(char.typeName).addClass('long')
 
           j++
           const chunk = checkChunk(chunks.consonant(j), 'complex vowel')
-          chunk.addClass(char.name).addClass(char.typeName)
+          chunk.addClass(char.secondChar).addClass(char.name).addClass(char.typeName).addClass('long')
         }
 
         // shuruq and holem-vav
@@ -100,9 +100,13 @@ const populateLayer = ($, syllables, stress) => {
 
           j++
           const chunk = checkChunk(chunks.consonant(j), 'shuruq or holem-vav')
-          chunk.addClass(char.name).addClass(char.typeName)
+          chunk.addClass(char.firstChar).addClass(char.name).addClass(char.typeName).addClass('long')
 
-          chunks.vowel(j).addClass(char.name).addClass(char.typeName)
+          if (char.name === 'shuruq') {
+            chunks.dagesh(j).addClass(char.secondChar).addClass(char.name).addClass(char.typeName).addClass('long')
+          } else {
+            chunks.vowel(j).addClass(char.secondChar).addClass(char.name).addClass(char.typeName).addClass('long')
+          }
 
         } else {
           throw Error('Failed to identify char >> ' + JSON.stringify(char))
