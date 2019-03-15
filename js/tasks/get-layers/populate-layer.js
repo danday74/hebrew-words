@@ -102,7 +102,7 @@ const populateLayer = ($, syllables, stress) => {
           const chunk = checkChunk(chunks.consonant(j), 'shuruq or holem-vav')
           chunk.addClass(char.name).addClass(char.typeName)
 
-          chunks.vowel(j).addClass(char.name)
+          chunks.vowel(j).addClass(char.name).addClass(char.typeName)
 
         } else {
           throw Error('Failed to identify char >> ' + JSON.stringify(char))

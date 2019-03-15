@@ -6,7 +6,7 @@ const blankLayer = (consonantCount, unaccentedSounds) => {
 
   const indices = range(consonantCount)
 
-  const $ = cheerio.load('<span class="layer-chunk"></span>')
+  const $ = cheerio.load('<span class="layer-chunk"></span>', config.cheerioOptions)
 
   const layerChunk = $('.layer-chunk')
   const sep = config.sep
