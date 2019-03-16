@@ -1,7 +1,13 @@
 const chai = require('chai')
 const expect = chai.expect
+const gitDiff = require('git-diff')
 const hebrewWords = require('./hebrew-words')
 const testLayers = require('./test-layers')
+
+const showDiff = (actual, expected) => {
+  const diff = gitDiff(actual, expected, {color: true, wordDiff: true})
+  if (diff) console.log(diff)
+}
 
 describe('hebrew words', () => {
 
@@ -19,11 +25,13 @@ describe('hebrew words', () => {
   it('sha-lom             completeness, soundness', () => {
     const word = 'שָׁלוֹם'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.shalom
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
       layers: {
-        consonant: testLayers.consonant.shalom
+        consonant: expectedCL
       },
       counts: {
         consonants: 4,
@@ -44,10 +52,14 @@ describe('hebrew words', () => {
   it('eesh-sha            woman, wife', () => {
     const word = 'אִשָּׁה'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.eeshSha
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 3,
         syllables: 2,
