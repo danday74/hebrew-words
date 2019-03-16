@@ -1,3 +1,5 @@
-const getVowelLayer = (obj, $) => {}
+const getVowelLayer = (obj, $) => {
+  $('.layer-chunk').addClass('vowel-layer')
+}
 
 module.exports = getVowelLayer
