@@ -42,6 +42,7 @@ const isSyllableOpen = syllable => {
   return vp === 'CV' || vp === 'CNCV'
 }
 
+// noinspection JSUnusedGlobalSymbols
 const shared = {
   replaceCharsWithIds,
   getVowelPattern,
