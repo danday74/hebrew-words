@@ -39,7 +39,7 @@ const getStressObj = (syllables, idx, stress) => {
 
 const isSyllableOpen = syllable => {
   const vp = getVowelPattern(syllable)
-  return vp === 'CV'
+  return vp === 'CV' || vp === 'CNCV'
 }
 
 const shared = {
