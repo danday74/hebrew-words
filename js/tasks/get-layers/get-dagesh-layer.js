@@ -13,8 +13,10 @@ const getDageshLayer = (obj, $) => {
   chars.forEach(char => {
     const isConsonant = plainConsonantChars.includes(char)
     if (isConsonant) i++
-    const chunk = $(`.letter-${i} .content-chunk`)
-    if (char === dagesh.char) chunk.text(chunk.text() + dagesh.char)
+    if (char === dagesh.char) {
+      const chunk = $(`.letter-${i} .content-chunk`)
+      chunk.text(chunk.text() + dagesh.char)
+    }
   })
 
   // obj.layers.dagesh = $('body').html()
