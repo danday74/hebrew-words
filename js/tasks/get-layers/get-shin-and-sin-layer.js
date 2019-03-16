@@ -16,11 +16,11 @@ const getShinAndSinLayer = (obj, $) => {
   chars.forEach(char => {
     const isConsonant = plainConsonantChars.includes(char)
     if (isConsonant) i++
-    const contentChunk = $(`.letter-${i} .content-chunk`)
+    const chunk = $(`.letter-${i} .content-chunk`)
     if (prevChar === 'ש') {
-      if (char.charCodeAt(0) === 1473) contentChunk.text(shin.char) // shin dot
+      if (char.charCodeAt(0) === 1473) chunk.text(shin.char) // shin dot
       /* istanbul ignore else */
-      else if (char.charCodeAt(0) === 1474) contentChunk.text(sin.char) // sin dot
+      else if (char.charCodeAt(0) === 1474) chunk.text(sin.char) // sin dot
       else throw Error('shin dot or sin dot must follow shin or sin')
     }
     prevChar = char
