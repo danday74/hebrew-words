@@ -70,8 +70,9 @@ const populateLayer = ($, syllables, stress) => {
 
           if (char.begadKepat) {
             chunks.consonant(j).addClass('begad-kepat')
-            chunks.dagesh(j).addClass('dagesh').addClass('begad-kepat')
+            chunks.dagesh(j).addClass('dagesh')
             chunks.dagesh(j).addClass(prevChar && prevChar.type === 'V' ? 'strong' : 'weak')
+            chunks.dagesh(j).addClass('begad-kepat')
           }
         }
 
