@@ -19,7 +19,7 @@ const getDageshLayer = (obj, $) => {
     }
   })
 
-  // obj.layers.dagesh = $('body').html()
+  obj.layers.dagesh = $('body').html()
 }
 
 module.exports = getDageshLayer

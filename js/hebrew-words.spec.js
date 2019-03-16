@@ -9,6 +9,16 @@ const showDiff = (actual, expected) => {
   if (diff) console.log(diff)
 }
 
+const removeUntestedLayers = real => {
+  expect(real.layers.shinAndSin).to.not.be.undefined
+  expect(real.layers.dagesh).to.not.be.undefined
+  expect(real.layers.vowel).to.not.be.undefined
+  delete real.layers.shinAndSin
+  delete real.layers.dagesh
+  delete real.layers.vowel
+  return real
+}
+
 describe('hebrew words', () => {
 
   it('non hebrew word', () => {
@@ -24,7 +34,8 @@ describe('hebrew words', () => {
 
   it('sha-lom             completeness, soundness', () => {
     const word = 'שָׁלוֹם'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.shalom
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -51,7 +62,8 @@ describe('hebrew words', () => {
 
   it('eesh-sha            woman, wife', () => {
     const word = 'אִשָּׁה'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.eeshSha
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -78,7 +90,8 @@ describe('hebrew words', () => {
 
   it('heeg-geed           he declared, he told', () => {
     const word = 'הִגִּיד'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.heegGeed
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -105,7 +118,8 @@ describe('hebrew words', () => {
 
   it('meesh-kan           dwelling place, tabernacle', () => {
     const word = 'מִשְׁכָּן'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.meeshKan
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -132,7 +146,8 @@ describe('hebrew words', () => {
 
   it('mal-ach             messenger, angel', () => {
     const word = 'מַלְאָךְ'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.malAch
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -159,7 +174,8 @@ describe('hebrew words', () => {
 
   it('nechó-shet          copper, bronze   (no stress info)', () => {
     const word = 'נְחֹשֶׁת'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.nechoShet1
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -186,7 +202,8 @@ describe('hebrew words', () => {
 
   it('nechó-shet          copper, bronze   (with stress info)', () => {
     const word = 'נְחֹשֶׁת'
-    const actual = hebrewWords(word, true)
+    const real = hebrewWords(word, true)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.nechoShet2
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -213,7 +230,8 @@ describe('hebrew words', () => {
 
   it('shená-yeem          two', () => {
     const word = 'שְׁנַיִם'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.shenaYeem
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -240,7 +258,8 @@ describe('hebrew words', () => {
 
   it('choch-ma            wisdom   (no stress info)', () => {
     const word = 'חָכְמָה'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.chochMa1
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -267,7 +286,8 @@ describe('hebrew words', () => {
 
   it('choch-ma            wisdom   (with stress info)', () => {
     const word = 'חָכְמָה'
-    const actual = hebrewWords(word, false)
+    const real = hebrewWords(word, false)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.chochMa2
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -294,7 +314,8 @@ describe('hebrew words', () => {
 
   it('né-fesh             soul, person, living being', () => {
     const word = 'נֶפֶשׁ'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.neFesh
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -321,7 +342,8 @@ describe('hebrew words', () => {
 
   it('yeroo-sha-lá-yeem   Jerusalem', () => {
     const word = 'יְרוּשָׁלַיִם'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.yerooShaLaYeem
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -348,7 +370,8 @@ describe('hebrew words', () => {
 
   it('chav-va             Eve', () => {
     const word = 'חַוָּה'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.chavVa
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {
@@ -375,7 +398,8 @@ describe('hebrew words', () => {
 
   it('na-sa               he lifted, he carried', () => {
     const word = 'נָשָׂא'
-    const actual = hebrewWords(word)
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
     const expectedCL = testLayers.consonant.naSa
     showDiff(actual.layers.consonant, expectedCL)
     const expected = {

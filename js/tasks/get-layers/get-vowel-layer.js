@@ -20,7 +20,7 @@ const getVowelLayer = (obj, $) => {
     }
   })
 
-  // obj.layers.vowel = $('body').html()
+  obj.layers.vowel = $('body').html()
 }
 
 module.exports = getVowelLayer

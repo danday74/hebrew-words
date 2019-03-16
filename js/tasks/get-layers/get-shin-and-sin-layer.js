@@ -26,7 +26,7 @@ const getShinAndSinLayer = (obj, $) => {
     prevChar = char
   })
 
-  // obj.layers.shinAndSin = $('body').html()
+  obj.layers.shinAndSin = $('body').html()
 }
 
 module.exports = getShinAndSinLayer
