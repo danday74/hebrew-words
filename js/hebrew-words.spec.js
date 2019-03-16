@@ -79,10 +79,14 @@ describe('hebrew words', () => {
   it('heeg-geed           he declared, he told', () => {
     const word = 'הִגִּיד'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.heegGeed
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -102,10 +106,14 @@ describe('hebrew words', () => {
   it('meesh-kan           dwelling place, tabernacle', () => {
     const word = 'מִשְׁכָּן'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.meeshKan
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -125,10 +133,14 @@ describe('hebrew words', () => {
   it('mal-ach             messenger, angel', () => {
     const word = 'מַלְאָךְ'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.malAch
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -148,10 +160,14 @@ describe('hebrew words', () => {
   it('nechó-shet          copper, bronze   (no stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.nechoShet1
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -171,10 +187,14 @@ describe('hebrew words', () => {
   it('nechó-shet          copper, bronze   (with stress info)', () => {
     const word = 'נְחֹשֶׁת'
     const actual = hebrewWords(word, true)
+    const expectedCL = testLayers.consonant.nechoShet2
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -194,10 +214,14 @@ describe('hebrew words', () => {
   it('shená-yeem          two', () => {
     const word = 'שְׁנַיִם'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.shenaYeem
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: ['ends with ayim'],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -217,10 +241,14 @@ describe('hebrew words', () => {
   it('choch-ma            wisdom   (no stress info)', () => {
     const word = 'חָכְמָה'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.chochMa1
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -240,10 +268,14 @@ describe('hebrew words', () => {
   it('choch-ma            wisdom   (with stress info)', () => {
     const word = 'חָכְמָה'
     const actual = hebrewWords(word, false)
+    const expectedCL = testLayers.consonant.chochMa2
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 4,
         syllables: 2,
@@ -263,10 +295,14 @@ describe('hebrew words', () => {
   it('né-fesh             soul, person, living being', () => {
     const word = 'נֶפֶשׁ'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.neFesh
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: ['segolette'],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 3,
         syllables: 2,
@@ -286,10 +322,14 @@ describe('hebrew words', () => {
   it('yeroo-sha-lá-yeem   Jerusalem', () => {
     const word = 'יְרוּשָׁלַיִם'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.yerooShaLaYeem
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: ['ends with ayim'],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 7,
         syllables: 4,
@@ -309,10 +349,14 @@ describe('hebrew words', () => {
   it('chav-va             Eve', () => {
     const word = 'חַוָּה'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.chavVa
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 3,
         syllables: 2,
@@ -329,13 +373,17 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('na-sa             he lifted, he carried', () => {
+  it('na-sa               he lifted, he carried', () => {
     const word = 'נָשָׂא'
     const actual = hebrewWords(word)
+    const expectedCL = testLayers.consonant.naSa
+    showDiff(actual.layers.consonant, expectedCL)
     const expected = {
       word,
       notes: [],
-      layers: {},
+      layers: {
+        consonant: expectedCL
+      },
       counts: {
         consonants: 3,
         syllables: 2,
