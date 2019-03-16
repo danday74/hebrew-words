@@ -69,7 +69,8 @@ const populateLayer = ($, syllables, stress) => {
           if (char.name === 'sin') chunks.shinAndSin(j).addClass('sin-dot')
 
           if (char.begadKepat) {
-            chunks.dagesh(j).addClass('dagesh')
+            chunks.consonant(j).addClass('begad-kepat')
+            chunks.dagesh(j).addClass('dagesh').addClass('begad-kepat')
             chunks.dagesh(j).addClass(prevChar && prevChar.type === 'V' ? 'strong' : 'weak')
           }
         }
