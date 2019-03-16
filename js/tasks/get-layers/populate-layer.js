@@ -62,7 +62,7 @@ const populateLayer = ($, syllables, stress) => {
 
           j++
           const chunk = checkChunk(chunks.consonant(j), 'consonant')
-          chunk.addClass(char.name)
+          chunk.addClass(char.name.replace('-final', '')).addClass(char.name)
           if (char.final) chunk.addClass('final')
 
           if (char.name === 'shin') chunks.shinAndSin(j).addClass('shin-dot')
