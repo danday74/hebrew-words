@@ -26,7 +26,8 @@ describe('hebrew words', () => {
     const expected = {
       word,
       ok: false,
-      error: 'Non Hebraic character - t - detected in word'
+      error: 'Non Hebraic character - t - detected in word',
+      layers: {}
     }
     expect(actual).to.eql(expected)
   })
