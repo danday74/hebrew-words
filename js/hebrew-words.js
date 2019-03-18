@@ -39,7 +39,7 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
     return obj
 
   } catch (error) {
-    return {word, ok: false, error: error.message}
+    return {word, ok: false, error: error.message, layers: {}}
   }
 }
 

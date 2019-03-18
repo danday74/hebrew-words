@@ -8,6 +8,7 @@ const eeshSha = fs.readFileSync(__dirname + '/eesh-sha.html', 'utf8')
 const heegGeed = fs.readFileSync(__dirname + '/heeg-geed.html', 'utf8')
 const malAch = fs.readFileSync(__dirname + '/mal-ach.html', 'utf8')
 const meeshKan = fs.readFileSync(__dirname + '/meesh-kan.html', 'utf8')
+const naHar = fs.readFileSync(__dirname + '/na-har.html', 'utf8')
 const naSa = fs.readFileSync(__dirname + '/na-sa.html', 'utf8')
 const neFesh = fs.readFileSync(__dirname + '/ne-fesh.html', 'utf8')
 const nechoShet1 = fs.readFileSync(__dirname + '/necho-shet-1.html', 'utf8')
@@ -24,6 +25,7 @@ const consonant = {
   heegGeed: tidyHtml(heegGeed),
   malAch: tidyHtml(malAch),
   meeshKan: tidyHtml(meeshKan),
+  naHar: tidyHtml(naHar),
   naSa: tidyHtml(naSa),
   neFesh: tidyHtml(neFesh),
   nechoShet1: tidyHtml(nechoShet1),

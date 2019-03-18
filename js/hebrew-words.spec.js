@@ -5,14 +5,13 @@ const hebrewWords = require('./hebrew-words')
 const testLayers = require('./test-layers')
 
 const showDiff = (actual, expected) => {
-  const diff = gitDiff(actual, expected, {color: true, wordDiff: true})
-  if (diff) console.log(diff)
+  if (actual && expected) {
+    const diff = gitDiff(actual, expected, {color: true, wordDiff: true})
+    if (diff) console.log(diff)
+  }
 }
 
 const removeUntestedLayers = real => {
-  expect(real.layers.shinAndSin).to.not.be.undefined
-  expect(real.layers.dagesh).to.not.be.undefined
-  expect(real.layers.vowel).to.not.be.undefined
   delete real.layers.shinAndSin
   delete real.layers.dagesh
   delete real.layers.vowel
@@ -418,6 +417,34 @@ describe('hebrew words', () => {
       sounds: ['na-sa', 'na-so'],
       unaccentedSounds: ['na-sa', 'na-so'],
       transliterations: ['nāśā’', 'nāśo’'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('na-har               stream, river', () => {
+    const word = 'נָהָר'
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
+    const expectedCL = testLayers.consonant.naHar
+    showDiff(actual.layers.consonant, expectedCL)
+    const expected = {
+      word,
+      notes: [],
+      layers: {
+        consonant: expectedCL
+      },
+      counts: {
+        consonants: 3,
+        syllables: 2,
+        chars: 5
+      },
+      stress: null,
+      syllables: ['נָ', 'הָר'],
+      sounds: ['na-har', 'na-hor'],
+      unaccentedSounds: ['na-har', 'na-hor'],
+      transliterations: ['nāhār', 'nāhor'],
       ok: true,
       error: null
     }
