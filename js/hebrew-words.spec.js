@@ -20,13 +20,25 @@ const removeUntestedLayers = real => {
 
 describe('hebrew words', () => {
 
-  it('non hebrew word', () => {
+  it('Non Hebraic character detected in word', () => {
     const word = 'test'
     const actual = hebrewWords(word)
     const expected = {
       word,
       ok: false,
       error: 'Non Hebraic character - t - detected in word',
+      layers: {}
+    }
+    expect(actual).to.eql(expected)
+  })
+
+  it('Unrecognised vowel pattern', () => {
+    const word = 'הה'
+    const actual = hebrewWords(word)
+    const expected = {
+      word,
+      ok: false,
+      error: 'Unrecognised vowel pattern',
       layers: {}
     }
     expect(actual).to.eql(expected)
@@ -424,7 +436,7 @@ describe('hebrew words', () => {
     expect(actual).to.eql(expected)
   })
 
-  it('na-har               stream, river', () => {
+  it('na-har              stream, river', () => {
     const word = 'נָהָר'
     const real = hebrewWords(word)
     const actual = removeUntestedLayers(real)

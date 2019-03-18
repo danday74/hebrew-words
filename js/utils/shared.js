@@ -3,17 +3,8 @@ const {find} = require('lodash')
 const hebrewChars = require('../hebrew-chars')
 const all = hebrewChars.allIncComplexVowels
 
-const replaceCharsWithIds = (word, array) => {
-  const chars = word.split('')
-  word = chars.map(char => {
-    const vowel = find(array, {char})
-    return vowel ? vowel.id : char
-  }).join('')
-  return word
-}
-
-const getVowelPattern = encoded => {
-  const ids = encoded.split('')
+const getSyllableVowelPattern = syllable => {
+  const ids = syllable.split('')
   const vp = ids.map(id => {
     const letter = find(all, {id})
     return letter.type
@@ -38,14 +29,12 @@ const getStressObj = (syllables, idx, stress) => {
 }
 
 const isSyllableOpen = syllable => {
-  const vp = getVowelPattern(syllable)
+  const vp = getSyllableVowelPattern(syllable)
   return vp === 'CV' || vp === 'CNCV'
 }
 
 // noinspection JSUnusedGlobalSymbols
 const shared = {
-  replaceCharsWithIds,
-  getVowelPattern,
   logPrettyHtml,
   getStressObj,
   isSyllableOpen

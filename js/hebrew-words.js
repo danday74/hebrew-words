@@ -1,5 +1,5 @@
 const checkForInvalidChars = require('./tasks/check-for-invalid-chars')
-const encodeWord = require('./tasks/encode-word')
+const halfEncodeWord = require('./tasks/half-encode-word')
 const getStress = require('./tasks/get-stress')
 const encodeSyllables = require('./tasks/encode-syllables')
 const adjustSyllablesForShevaAndQamats = require('./tasks/adjust-syllables')
@@ -23,12 +23,13 @@ const hebrewWords = (word, stressOnPenultimateSyllable = null) => {
 
     checkForInvalidChars(obj.word)
 
-    const encodedWord = encodeWord(obj.word) // encodedWord has no sheva and qamats adjustments
+    const halfEncodedWord = halfEncodeWord(obj.word)
 
-    getStress(obj, word, encodedWord, stressOnPenultimateSyllable)
+    getStress(obj, word, halfEncodedWord, stressOnPenultimateSyllable)
 
-    const syllables = encodeSyllables(encodedWord)
+    const syllables = encodeSyllables(halfEncodedWord)
     const encodedSyllables = adjustSyllablesForShevaAndQamats(syllables, obj.stress)
+    const encodedWord = encodedSyllables.join('')
 
     getSyllables(obj, encodedSyllables)
     getCounts(obj, encodedWord)

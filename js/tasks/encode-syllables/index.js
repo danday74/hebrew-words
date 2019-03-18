@@ -1,57 +1,63 @@
-const {reduce} = require('lodash')
-const shared = require('../../utils/shared')
+const {find} = require('lodash')
+const hebrewChars = require('../../hebrew-chars')
+const RECOGNISED_VOWEL_PATTERNS = ['CV', 'CVC', 'CVCN']
+
+const findByIdOrChar = item => {
+  return find(hebrewChars.allExcComplexVowels, {id: item}) || find(hebrewChars.allExcComplexVowels, {char: item})
+}
 
 const encodeSyllables = encodedWord => {
 
-  let vp = shared.getVowelPattern(encodedWord)
-
-  const syllableVPs = []
-
   let currentSyllableVP = ''
-  let isDone = false
-  while (vp.length || !isDone) {
-    if (!currentSyllableVP.length) {
-      isDone = false
-      if (vp.endsWith('CV')) {
-        currentSyllableVP = 'CV'
-        vp = vp.slice(0, -2)
-      } else if (vp.endsWith('CVC')) {
-        currentSyllableVP = 'CVC'
-        vp = vp.slice(0, -3)
-      } /* istanbul ignore else */ else if (vp.endsWith('CVCN')) {
-        currentSyllableVP = 'CVCN'
-        vp = vp.slice(0, -4)
-      } else {
-        throw Error('Unrecognised vowel pattern at stage one')
-      }
+  let currentSyllable = ''
+  const syllables = []
+
+  while (encodedWord.length) {
+
+    const lastItem = encodedWord.slice(-1)
+    const last2Items = encodedWord.slice(-2)
+
+    const oneLetterChar = findByIdOrChar(lastItem)
+    const complexVowel = find(hebrewChars.complexVowels, {char: last2Items})
+
+    if (!complexVowel) {
+      currentSyllableVP = oneLetterChar.type + currentSyllableVP
+      currentSyllable = oneLetterChar.id + currentSyllable
+      encodedWord = encodedWord.slice(0, -1)
     } else {
-      isDone = true
-      const endVP = vp.slice(-3)
-      if (!vp.endsWith('N') || endVP.includes('V')) {
-        syllableVPs.unshift(currentSyllableVP)
-        currentSyllableVP = ''
-      } /* istanbul ignore else */ else if (vp.endsWith('N') && vp.length === 2) {
-        currentSyllableVP = vp + currentSyllableVP
-        syllableVPs.unshift(currentSyllableVP)
-        vp = ''
+      if (currentSyllableVP.charAt(0) === 'V') {
+        currentSyllableVP = oneLetterChar.type + currentSyllableVP
+        currentSyllable = oneLetterChar.id + currentSyllable
+        encodedWord = encodedWord.slice(0, -1)
       } else {
-        throw Error('Unrecognised vowel pattern at stage two')
+        currentSyllableVP = complexVowel.type + currentSyllableVP
+        currentSyllable = complexVowel.id + currentSyllable
+        encodedWord = encodedWord.slice(0, -2)
       }
+    }
+
+    if (RECOGNISED_VOWEL_PATTERNS.includes(currentSyllableVP)) {
+
+      const lastItem = encodedWord.charAt(encodedWord.length - 1)
+      const secondLastItem = encodedWord.charAt(encodedWord.length - 2)
+      const thirdLastItem = encodedWord.charAt(encodedWord.length - 3)
+
+      const lastChar = findByIdOrChar(lastItem)
+      const secondLastChar = findByIdOrChar(secondLastItem)
+      const thirdLastChar = findByIdOrChar(thirdLastItem)
+
+      if (lastChar && secondLastChar && lastChar.type === 'N' && secondLastChar.type === 'C' && !thirdLastChar) {
+        currentSyllable = secondLastChar.id + lastChar.id + currentSyllable
+        encodedWord = encodedWord.slice(0, -2)
+      }
+
+      syllables.unshift(currentSyllable)
+      currentSyllableVP = ''
+      currentSyllable = ''
     }
   }
 
-  let startIdx = 0
-  const syllables = reduce(syllableVPs, (acc, syllableVPs) => {
-    const length = syllableVPs.length
-    const ids = encodedWord.substring(startIdx, startIdx + length)
-    startIdx += length
-    return [...acc, ids]
-  }, [])
-
-  /* istanbul ignore if */
-  if (encodedWord !== syllables.join('')) {
-    throw Error('Syllables do not match original word')
-  }
+  if (currentSyllableVP !== '') throw Error('Unrecognised vowel pattern')
 
   return syllables
 }

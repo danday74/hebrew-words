@@ -15,7 +15,7 @@ const getStress = (obj, word, encodedWord, stressOnPenultimateSyllable) => {
   const fromEnd4 = encodedWord.charAt(encodedWord.length - 4)
   const segol = find(simpleVowels, {name: 'segol'})
 
-  if (fromEnd2 === segol.id && fromEnd4 === segol.id) {
+  if (fromEnd2 === segol.char && fromEnd4 === segol.char) {
     stressOnPenultimateSyllable = true
     obj.notes.push('segolette')
   }
