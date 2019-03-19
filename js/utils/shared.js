@@ -1,16 +1,7 @@
-const beautifyHtml = require('js-beautify').html
 const {find} = require('lodash')
+const beautifyHtml = require('js-beautify').html
 const hebrewChars = require('../hebrew-chars')
 const all = hebrewChars.allIncComplexVowels
-
-const getSyllableVowelPattern = syllable => {
-  const ids = syllable.split('')
-  const vp = ids.map(id => {
-    const letter = find(all, {id})
-    return letter.type
-  }).join('')
-  return vp
-}
 
 /* istanbul ignore next */
 const logPrettyHtml = strHtml => {
@@ -26,6 +17,15 @@ const getStressObj = (syllables, idx, stress) => {
   if (stress === 'ultimate') accented = ultimate
   if (!penultimate && !ultimate) accented = false
   return {penultimate, ultimate, accented}
+}
+
+const getSyllableVowelPattern = syllable => {
+  const ids = syllable.split('')
+  const vp = ids.map(id => {
+    const letter = find(all, {id})
+    return letter.type
+  }).join('')
+  return vp
 }
 
 const isSyllableOpen = syllable => {
