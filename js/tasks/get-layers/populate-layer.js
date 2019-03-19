@@ -105,7 +105,7 @@ const populateLayer = ($, syllables, stress) => {
           chunk.addClass(char.firstChar).addClass(char.name).addClass(char.typeName).addClass('long')
 
           if (char.name === 'shuruq') {
-            chunks.dagesh(j).addClass(char.secondChar).addClass(char.name).addClass(char.typeName).addClass('long')
+            chunks.dagesh(j).addClass(char.name).addClass(char.typeName).addClass('long')
           } else {
             chunks.vowel(j).addClass(char.secondChar).addClass(char.name).addClass(char.typeName).addClass('long')
           }
