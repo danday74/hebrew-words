@@ -1,6 +1,7 @@
 const {find} = require('lodash')
 const hebrewChars = require('../../hebrew-chars')
 const simpleVowels = hebrewChars.simpleVowels
+const nonVowels = hebrewChars.nonVowels
 
 const getStress = (obj, word, encodedWord, stressOnPenultimateSyllable) => {
 
@@ -11,11 +12,16 @@ const getStress = (obj, word, encodedWord, stressOnPenultimateSyllable) => {
     obj.notes.push('ends with ayim')
   }
 
+  const fromEnd1 = encodedWord.charAt(encodedWord.length - 1)
   const fromEnd2 = encodedWord.charAt(encodedWord.length - 2)
+  const fromEnd3 = encodedWord.charAt(encodedWord.length - 3)
   const fromEnd4 = encodedWord.charAt(encodedWord.length - 4)
-  const segol = find(simpleVowels, {name: 'segol'})
+  const fromEnd5 = encodedWord.charAt(encodedWord.length - 5)
 
-  if (fromEnd2 === segol.char && fromEnd4 === segol.char) {
+  const segol = find(simpleVowels, {name: 'segol'})
+  const sheva = find(nonVowels, {name: 'sheva'})
+
+  if (fromEnd2 === segol.char && fromEnd4 === segol.char || fromEnd1 === sheva.char && fromEnd3 === segol.char && fromEnd5 === segol.char) {
     stressOnPenultimateSyllable = true
     obj.notes.push('segolette')
   }

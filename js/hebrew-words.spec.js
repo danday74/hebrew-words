@@ -463,4 +463,32 @@ describe('hebrew words', () => {
     }
     expect(actual).to.eql(expected)
   })
+
+  it('me-lech             king', () => {
+    const word = 'מֶלֶךְ'
+    const real = hebrewWords(word)
+    const actual = removeUntestedLayers(real)
+    const expectedCL = testLayers.consonant.meLech
+    showDiff(actual.layers.consonant, expectedCL)
+    const expected = {
+      word,
+      notes: ['segolette'],
+      layers: {
+        consonant: expectedCL
+      },
+      counts: {
+        consonants: 3,
+        syllables: 2,
+        chars: 6
+      },
+      stress: 'penultimate',
+      syllables: ['מֶ', 'לֶךְ'],
+      sounds: ['mé-lech'],
+      unaccentedSounds: ['me-lech'],
+      transliterations: ['méleḵ'],
+      ok: true,
+      error: null
+    }
+    expect(actual).to.eql(expected)
+  })
 })
